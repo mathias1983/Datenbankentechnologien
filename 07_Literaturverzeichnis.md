@@ -2,12 +2,21 @@
 
 A.: ZODB – a native object databse for Python. URL www.zodb.org/en/latest. — Abgerufen am 08.12.2016
 
+Ambler, Scott: The Object-Relational Impedance Mismatch. URL http://www.agiledata.org/essays/
+impedanceMismatch.html. — Abgerufen am 21.01.2017
+
 Atkinson, Malcolm ; Bancilhon, Francois ; DeWitt, David ; Dittrich, Klaus ; Maier, David ;
 Zdonik, Stanley: The Object-Oriented Database System Manifesto. URL http://www.cs.cmu.edu/afs/
 cs.cmu.edu/user/clamen/OODBMS/Manifesto/htManifesto/Manifesto.html. — Abgerufen am 01.01.2017
 
+Gilbert, Seth ; Lynch, Nancy Aa: Perspectives on the CAP Theorem. URL http://groups.csail.mit.
+edu/tds/papers/Gilbert/Brewer2.pdf. — Abgerufen am 14.01.2017
+
 Heuer, A.: Objektorientierte Datenbanken: Konzepte, Modelle, Standards und Systeme : Addison-Wesley,
 1997 – Maßstab — ISBN 9783893198009
+
+Issa, Alain ; Schiltz, François: Document oriented Databases. URL http://cs.ulb.ac.be/public/
+_media/teaching/infoh415/student_projects/couchdb.pdf. — Abgerufen am 23.12.2016
 
 k.A.: The Object-Oriented Database System Manifesto. URL https://www.fbi.h-da.de/fileadmin/personal/
 h.erbs/Databases/ObjectOrientedDBMSs/Manifesto/index.Html. — Zusammenfassung des Original-

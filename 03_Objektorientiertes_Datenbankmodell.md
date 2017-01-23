@@ -41,29 +41,41 @@ Nachfolgend werden nun die zu Anfang beschriebenen Anforderungen aus dem "Manife
 **Komplexe Objekte.** Objektorientierte Datenbanken müssen komplexe Objekte aufnehmen können. Das Bedeutet, dass bedeutet, dass nicht nur 
 Standarddatentypen (wie in relationalen Datenbanken) aufgenommen werden können, sondern auch tuples, sets, bags, lists und arrays, wobei diese in jeder Form 
 kombinierbar sein sollen.
+
 **Objektidentität** In objektorientierten Datenbanken erhält jedes Objekt bei Aufnahme in die Datenbank einen eindeutigen Key. Dieser ist unabhängig vom 
 Inhalt des Objekts und ergibt sich nicht aus den Werten selbst, wie es bei relationalen Datenbanken häufig der Fall ist.
+
 **Einkapselung.** Objekte sind so gekapselt, dass Werte nur durch öffentliche Operationenverändert werden können. Lediglich bei der Verwendung von ad-hoc-
 Abfragen muss ein direkter Zugriff auf die Objekte möglich sein, sodass in einem solchen Fall, der Kapselungsmechanismus nicht zu strikt arbeitet.
+
 **Typen und Klassen** Typen sind wie einfache Datentypen zu verstehen, wobei diese einen data-part sowie einen operation-part beinhalten. Der data-part 
 beschreibt dabei die Objekt-interne Datenstruktur, der operation-part besteht hingegen aus Prozeduren, die Operationen des interface-parts darstellen. In 
 einer Klasse werden Objekte zusammengefasst, die eine identische Struktur aufweisen. Klassen berücksichtigen dabei zwei Aspekte. In der object-factory können 
 neue Objekte erzeugt werden, im object-warehouse diese abgelegt.
+
 **Klassen- und Typhierarchien** Dieser Punkt kann auch als Vererbung bezeichnet werden. Klassen und Typen können dabei in Baumstrukktur arrangiert werden 
 und Attribute und Methoden erben.
+
 **Overriding, Überladen und dynamisches Binden von Methoden** Die selbe Methode mit identischem Namen kann in unterschiedlichen Klassen verwendet werden, 
 da abhängig von Typ bzw. Klasse entschieden wird, welche benutzt wird.
+
 **Datenbank-Programmiersprache** Durch die Sprache des OODBMS muss jeder Algorithmus beschreibbar sein, was bspw. bei SQL nicht der Fall ist.
+
 **Erweiterbarkeit** Die Datenbank muss neben den Standard-Datentypen auch User-definierte typen aufnehmen können und mit diesen in identischer Weise 
 umgehen.
+
 **Persistenz**  Gespeicherte Daten oder eben auch Objekte müssen dauerhaft gespeichert werden können. Der Speichervorgang muss dabei inbegriffen sein, 
 sodass hierfür nicht explizit Operationen ausgeführt werden müssen.
+
 **Sekundärspeicher-Verwaltung** Das OODBMS muss Werkzeuge bereitstellen, um Daten effizient zu verwalten. Hierzu zählen u.a. Index-Management, Daten-
 Clustiering, Daten-Pufferung und Abfragenoptimierung.
+
 **Nebenläufigkeit von Transaktionen** Wie in jedem Datenbankmanagementsystem muss es auch in OODBMS möglich sein, dass mehrere User gleichzeitig auf 
 dieses zugreifen.
+
 **Recovery-Mechanismen** Bei Hard- oder Softwarefehlern bzw. -ausfall müssen die gängigen Mechanismen zur Verfügung stehen, um unvollständig ausgeführte 
 Transaktionen zurückzusetzen und erneut auszuführen.
+
 **Anfragesprachen** Objektorientierte Datenbankmanagementsysteme müssen Werkzeuge für direkte Abfragen bereitstellen. Dabei sollten folgende Kriterien 
 erfüllt sein: Die Abfragesprache muss deklarativ und effizient sein, sowie auf allen Datenbankstrukturen funktionieren, auch wenn neben den Standard-Typen und -Klassen Benutzerdefinierte vorliegen.
 (vgl. k.A. 1989) und (vgl. Heuer 1997, S. 276)
@@ -73,11 +85,15 @@ Neben diesen 13 vorausgesetzten Anforderungen, gibt es folgende fünf weiteren, 
 
 
 **Mehrfachvererbung**Ein OODBMS kann die Mehrfachvererbung optional anbieten.
+
 **Statische Typisierung und Typ-Inferenz** Eine Typ-Überprüfung beim Kompilieren kann genutzt werden. Je ausgeprägter diese genutzt wird desto besser. Im 
 Optimalfall liefert ein vom Compiler akzeptiertes Prgramm kein Typ-Fehler. Bei der Typ-Inferenz zeigt sich ein ähnliches Bild. Optimal wäre es, wenn nur die 
 Basis-Typen deklariert werden müssen und weitere, temporäre Typen vom System geschlussfolgert werden können.
+
 **Verteilung** Die Datenbank kann verteilt werden, wobei die Verteilung von Objekten aber zu Konflikten führen kann.
+
 **Lange Transaktionen** Transaktionen können lange dauern. Daher unterstützen viele OODBS lange Transaktionen.
+
 **Versionen** Viele OODBS unterstützen eine Versionierung um die Aktivitäten während der Design-Phase abzubilden.
 (vgl. k.A. 1989) und (vgl. Heuer 1997, S. 276)
 
@@ -110,7 +126,9 @@ Da diese Datentypen meist nicht ausreichen um entsprechende Strukturen widerzusp
 
 
 **Tupelkonstruktor** Der Tupelkonstruktor (TUPEL OF) fasst mehrere Komponenten unterschiedlicher Typen zusammen, sodass daraus ein neuer Typ entsteht. Die dabei zugrundliegenden Typen werden als Komponententypen bezeichnet.
+
 **Mengenkonstruktor** Der Mengenkonstruktor oder auch SET OF wird genutzt, um aus mehreren Elementen eines zugrundeliegenden Typs einen neuen Typ zu erzeugen. Elementtyp ist die Bezeichnung für den zugrundeliegenden Typ. Besonderheit ist, dass die Menge Elemente nicht doppelt enthält und auch keine Ordnung hat.
+
 **Listenkonstruktor** Der Listenkonstruktor (LIST OF) erzeugt genauso einen neuen Typ aus mehreren zugrundeliegenden Elementen eines Typs. Der zugrundeliegende Typ wird wie beim Mengenkonstruktor als Elementtyp bezeichnet, unterscheidet sich aber dahingehend, dass die Instanz des zugrundeliegenden Typs eine Liste ist. Das bedeutet, dass anders als beim Mengenkonstruktor, Elemente mehrfach enthalten sein können. Ebenso kann die Ordnung der Elemente erhalten bleiben, was für den Umgang mit Matritzen oder Messwertreihen erforderlich ist.
 (vgl. Heuer 1997, S. 279)
 
@@ -130,6 +148,7 @@ Bei der Betrachtung von Einkapselung müssen allerdings zwei Sichtweisen untersc
 
 
 **Programmiersprachen-Sicht** Die Programmiersprachen-Sicht der Einkapselung hat ein Objekt einen Interface-Bereich sowie einen Implementierungs-Bereich. Der Interface-Bereich stellt dabei die möglichen Operationen ur Verfügung die ausgeführt werden können und ist der einzig sichtbare Teil. Der Implementierungs-Bereich teilt sich nochmals in den Daten-Anteil und den prozeduralen Anteil. Der Daten-Teil beinhalt den aktuellen Zustand des Objekts, der prozedurale Anteil beinhaltet die Implementierungen der verfügbaren Operationen (vgl. Atkinson et al., Rubrik: Encapsulation).
+
 **Datenbank-Sicht** Bei der Datenbanksicht sind die Attribute, deren Struktur und das Interface der Methodes in der Anwendung sichtbar. Lediglich die Imploementierung der zur Verfügung stehenden Methoden ist versteckt (vgl. Heuer 1997, S. 383).
 
 
@@ -310,3 +329,4 @@ Strukturen dem Entwickler nicht bekannt sind. Dies ist allerdings Voraussetzung 
 Nachteilen, fehlt auch die Möglichkeit, Views zu nutzen, um bspw. die Sicherheit zu erhöhen oder Komplexität abzubauen. Die angesprochene Sicherheit ist 
 darüber hinaus ein nennenswerter Nachteil, da OODBMS keine ausreichend geeigneten Mechanismen in diesem Kontext bereitstellen. So fehlt es u.a. an 
 Möglichkeiten, individuelle Rechte für Objekte und Klassen zu vergeben.
+
