@@ -34,9 +34,9 @@ Analysieren Sie die Verbreitung von OODB und grenzen OODB von Dokumentendatenban
 ### Inhalt
 
     1. Einleitung  
-    2. CAP-Theorem  
-    3. CRDT - Conflict-free Replicated Data Type  
-       3.1. Begrifflichkeiten  
+    3. Objektorientiertes Datenbankmodell  
+       3.1. Konzept
+       2.2 
             3.1.1. CRDT  
             3.1.2. Optimistic Replication  
             3.1.3. Eventual Consistency  
