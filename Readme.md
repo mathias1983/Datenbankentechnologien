@@ -9,6 +9,7 @@ author:
 - Mathias Buß
 - Svenja Haberditzl
 - Max Schaphaus
+
 ---
 
 Mathias Buß
@@ -16,8 +17,8 @@ Matrikel-Nr.:
 E-Mail:
 
 Svenja Haberditzl
-Matrikel-Nr.:
-E-Mail:
+Matrikel-Nr.: 830791
+E-Mail: s60779@beuth-hochschule.de
 
 Max Schaphaus
 Matrikel-Nr.:
