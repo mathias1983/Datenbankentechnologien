@@ -34,6 +34,7 @@ Analysieren Sie die Verbreitung von OODB und grenzen OODB von Dokumentendatenban
 ### Inhalt
 
     1. Einleitung  
+    
     2. Objektorientiertes Datenbankmodell  
        2.1 Konzept
        2.2 Objekte, Datenbanken und Kapselung
@@ -49,7 +50,8 @@ Analysieren Sie die Verbreitung von OODB und grenzen OODB von Dokumentendatenban
        2.9 Vor- und Nachteile
            2.9.1 Vorteile
            2.9.2 Nachteile
-    4. Konkrete Datentypen  
+           
+    3.   
     5. Beispiel Last Writer Wins Register (LWW-Register)  
     6. Zusammenfassung  
     7. Literaturverzeichnis
