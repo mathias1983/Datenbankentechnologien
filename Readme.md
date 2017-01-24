@@ -45,6 +45,11 @@ Analysieren Sie die Verbreitung von OODB und grenzen OODB von Dokumentendatenban
        2.4 Vererbung
        2.5 Operationen
        2.6 Datenbankmodelle
+           2.6.1 Iris
+           2.6.2 O2
+           2.6.3 Extra
+           2.6.4 Extrem
+           2.6.5 Cocoon
        2.7 Datenbank- und Abfragesprache
        2.8 Datenbanksysteme
            2.8.1 db4o
