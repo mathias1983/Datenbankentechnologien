@@ -134,29 +134,7 @@ Da diese Datentypen meist nicht ausreichen um entsprechende Strukturen widerzusp
 
 Nachfolgend wird die Nutzung der drei Konstruktoren an zwei Beispielen dargestellt.
 
-Beispiel 1: Objekttyp Personen
-```
-SET OF(TUPLE OF(Name: TUPLE OF(Vorname: STRING,
- 							  Nachname: STRING),
-                Adresse: TUPLE OF(PLZ: INTEGER,
-                				  ORT: STRING,
-                                  Straße: STRING,
-                                  Hausnummer: INTEGER),
-                Hobbies: SET OF(Hobby: STRING),
-                Geburtsdatum: DATE))
-```
-
-Beispiel 2: Objekttyp Bücher
-```
-SET OF(TUPLE OF(ISBN: STRING,
-				Titel: STRING,
-                Verlagsname: STRING
-                Autoren: LIST OF(Autor: STRING),
-                Stichworte: SET OF(Stichwort: STRING),
-                Versionen SET OF(TUPLE OF(Auflage: INTEGER,
-                						  Jahr: INTEGER))))
-```
-(vgl. Heuer 1997, S. 279f.)
+![Beispiele: Kombination der Konstruktoren (vgl. Heuer 1997, S. 279f.)](images\konstruktoren1.png)
 
 
 ### Kapselung
