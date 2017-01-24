@@ -1,8 +1,8 @@
 # OODB vs. Dokumentendatenbanken
 
 ---
-title: "OODV vs. Dokumentendatenbanken"
-institute: Hochschule Emden/Leer
+title: "OODV vs. Dokumentendatenbanken"   
+institute: Hochschule Emden/Leer   
 tags: [OODB, DocDB, NoSQL]
 
 author:
