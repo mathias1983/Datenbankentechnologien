@@ -47,6 +47,8 @@ Analysieren Sie die Verbreitung von OODB und grenzen OODB von Dokumentendatenban
        2.6 Datenbankmodelle
        2.7 Datenbank- und Abfragesprache
        2.8 Datenbanksysteme
+           2.8.1 db4o
+           2.8.2 ZODB
        2.9 Vor- und Nachteile
            2.9.1 Vorteile
            2.9.2 Nachteile
