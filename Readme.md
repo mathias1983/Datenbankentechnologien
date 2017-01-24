@@ -53,7 +53,19 @@ Analysieren Sie die Verbreitung von OODB und grenzen OODB von Dokumentendatenban
            2.9.1 Vorteile
            2.9.2 Nachteile
            
-    3.   
+    3.   Dokumentenorientiertes Datenbankmodell
+         3.1 Einleitung und NoSQL
+         3.2 Konzept
+         3.3 MongoDB
+             3.3.1 Indextypen
+             3.3.2 Indexeigenschaften
+             3.3.3 Weitere Features
+         3.4 CouchDB
+             3.4.1 HTTP Rest Schnittstelle
+             3.4.2 Views
+             3.4.3 Eventual Consistency
+             3.4.4 Replikation
+         3.5 Vor- und Nachteile
     
     4. Analyse - Warum sich OODB am Markt nicht durchsetzen konnte  
     
