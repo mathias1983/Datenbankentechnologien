@@ -1,4 +1,4 @@
-# NoSQL
+# NoSQL Test
 
 NoSQL-Datenbanken liefern einen völlig neuen Ansatz zur Speicherung von Daten und
 besitzen üblicherweise kein festes Schema, sind nicht relational und legen weniger Wert auf Konsistenz, als relationale Datenbanken. Die Abkürzung NoSQL ist nicht präzise spezifiziert, wird aber häufig als "Not only SQL" oder auch "non SQL" bezeichnet, was einerseits suggeriert, dass auch in NoSQL-Datenbanken SQL ähnliche Abfragesprachen anzutreffen sind, andererseits soll so die Abgrenzung zu relationalen Modellen verdeutlicht werden.
