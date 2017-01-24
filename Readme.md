@@ -27,7 +27,7 @@ Matrikel-Nr.:
 Hochschule:   
 E-Mail:
 
-
+Aufgabenstellung:   
 OODB galten lange Zeit als sehr gute Alternative zu Relationalen Datenbanken. Sie konnten sich allerdings nie durchsetzen.
 Analysieren Sie die Verbreitung von OODB und grenzen OODB von Dokumentendatenbanken ab.
 
