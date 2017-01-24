@@ -34,6 +34,7 @@ Analysieren Sie die Verbreitung von OODB und grenzen OODB von Dokumentendatenban
 # Inhaltsverzeichnis
  
 1. Einleitung   
+
 2. Objektorientiertes Datenbankmodell   
    2.1 Konzept   
    2.2 Objekte, Datentypen und Kapselung   
@@ -47,8 +48,9 @@ Analysieren Sie die Verbreitung von OODB und grenzen OODB von Dokumentendatenban
    2.7 Datenbank- und Abfragesprache   
    2.8 Datenbanksysteme   
    2.9 Vor- und Nachteile   
-       2.9.1 Vorteile   
-       2.9.2 Nachteile   
+      2.9.1 Vorteile   
+      2.9.2 Nachteile   
+       
    3 
 
 
