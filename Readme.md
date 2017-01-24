@@ -23,11 +23,11 @@ Hochschule: Beuth Hochschule für Technik Berlin
 E-Mail: s60779@beuth-hochschule.de
 
 Max Schaphaus   
-Matrikel-Nr.:   
+Matrikel-Nr.: 7005623   
 Hochschule:   
-E-Mail:
+E-Mail: max.schaphaus@googlemail.com
 
-Aufgabenstellung:   
+**Aufgabenstellung:**   
 OODB galten lange Zeit als sehr gute Alternative zu Relationalen Datenbanken. Sie konnten sich allerdings nie durchsetzen.
 Analysieren Sie die Verbreitung von OODB und grenzen OODB von Dokumentendatenbanken ab.
 
