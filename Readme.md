@@ -12,16 +12,16 @@ author:
 
 ---
 
-Mathias Buß
-Matrikel-Nr.:
+Mathias Buß   
+Matrikel-Nr.:   
 E-Mail:
 
 Svenja Haberditzl   
 Matrikel-Nr.: 830791   
 E-Mail: s60779@beuth-hochschule.de
 
-Max Schaphaus
-Matrikel-Nr.:
+Max Schaphaus   
+Matrikel-Nr.:   
 E-Mail:
 
 
