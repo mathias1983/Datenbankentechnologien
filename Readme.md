@@ -34,13 +34,12 @@ Analysieren Sie die Verbreitung von OODB und grenzen OODB von Dokumentendatenban
 ### Inhalt
 
     1. Einleitung  
-    3. Objektorientiertes Datenbankmodell  
-       3.1. Konzept
-       2.2 
-            3.1.1. CRDT  
-            3.1.2. Optimistic Replication  
-            3.1.3. Eventual Consistency  
-            3.1.4. Strong Eventual Consistency  
+    2. Objektorientiertes Datenbankmodell  
+       2.1 Konzept
+       2.2 Objekte, Datenbanken und Kapselung
+            2.2.1 Objekte  
+            2.2.2 Datenbanken  
+            2.2.3 Kapselung   
        3.2. Convergent Replicated Data Type (CvRDT)  
        3.3. Commutative Replicated Data Type (CmRDT)  
     4. Konkrete Datentypen  
