@@ -52,9 +52,9 @@ Analysieren Sie die Verbreitung von OODB und grenzen OODB von Dokumentendatenban
            2.9.2 Nachteile
            
     3.   
-    5. Beispiel Last Writer Wins Register (LWW-Register)  
-    6. Zusammenfassung  
-    7. Literaturverzeichnis
+    4. Analyse - Warum sich OODB am Markt nicht durchsetzen konnte  
+    5. Fazit  
+    6. Literaturverzeichnis
 
 
 
