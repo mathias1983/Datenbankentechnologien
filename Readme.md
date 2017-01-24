@@ -49,7 +49,7 @@ Analysieren Sie die Verbreitung von OODB und grenzen OODB von Dokumentendatenban
    2.9 Vor- und Nachteile   
        2.9.1 Vorteile   
        2.9.2 Nachteile   
-   3
+   3 
 
 
 
