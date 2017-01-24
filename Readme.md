@@ -38,9 +38,9 @@ Analysieren Sie die Verbreitung von OODB und grenzen OODB von Dokumentendatenban
 2. Objektorientiertes Datenbankmodell   
    2.1 Konzept   
    2.2 Objekte, Datentypen und Kapselung   
-       2.2.1 Objekte   
-       2.2.2 Datentypen   
-       2.2.3 Kapselung   
+      2.2.1 Objekte   
+      2.2.2 Datentypen   
+      2.2.3 Kapselung   
    2.3 Klassen   
    2.4 Vererbung   
    2.5 Operationen   
