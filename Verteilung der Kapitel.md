@@ -7,7 +7,7 @@ Matthias Buß
   - 3.4 CouchDB
   - 3.5 Vor- und Nachteile
 
-- Analyse - Warum sich OODB am Markt nicht durchsetzen konnte
+- Analyse - Warum sich OODB am Markt nicht durchsetzen konnte   
 
 
 Max Schaphaus
@@ -19,7 +19,7 @@ Max Schaphaus
   - 2.2 Objekte, Datenbanken und Kapselung
   - 2.5 Operationen
   - 2.6 Datenbankmodelle
-  - 2.9.2 Nachteile
+  - 2.9.2 Nachteile   
 
 
 Svenja Haberditzl   
