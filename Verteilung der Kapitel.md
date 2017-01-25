@@ -1,6 +1,6 @@
 # Verteilung der Kapitel
 
-Hier werden die einzelnen Mitglieder Gruppe aufgelistet mit den Kapiteln bzw. Unterkapiteln, die jeweils bearbeitet wurden.
+Hier werden die einzelnen Mitglieder der Gruppe aufgelistet mit den Kapiteln bzw. Unterkapiteln, die jeweils bearbeitet wurden.
 
 ---
 
