@@ -1,3 +1,9 @@
+# Verteilung der Kapitel
+
+Hier werden die einzelnen Mitglieder Gruppe aufgelistet mit den Kapiteln bzw. Unterkapiteln, die jeweils bearbeitet wurden.
+
+---
+
 Matthias Buß
 
 - Dokumentenorientiertes Datenbankmodell
@@ -22,6 +28,7 @@ Max Schaphaus
   - 2.6 Datenbankmodelle
   - 2.9.2 Nachteile   
 
+---
    
 Svenja Haberditzl   
 
