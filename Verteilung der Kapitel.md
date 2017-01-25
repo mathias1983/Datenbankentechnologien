@@ -8,7 +8,7 @@ Matthias Buß
   - 3.5 Vor- und Nachteile
 
 - Analyse - Warum sich OODB am Markt nicht durchsetzen konnte   
-
+   
 
 Max Schaphaus
 
@@ -21,7 +21,7 @@ Max Schaphaus
   - 2.6 Datenbankmodelle
   - 2.9.2 Nachteile   
 
-
+   
 Svenja Haberditzl   
 
 - Objektorientiertes Datenbankmodell
