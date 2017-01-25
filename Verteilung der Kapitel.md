@@ -15,11 +15,11 @@ Max
 - 1. Einleitung
 
 - 2. Objektorientiertes Datenbankmodell
-  - 2.1 Konzept
-  - 2.2 Objekte, Datenbanken und Kapselung
-  - 2.5 Operationen
-  - 2.6 Datenbankmodelle
-  - 2.9.2 Nachteile
+ - 2.1 Konzept
+ - 2.2 Objekte, Datenbanken und Kapselung
+ - 2.5 Operationen
+ - 2.6 Datenbankmodelle
+ - 2.9.2 Nachteile
 
 
 Matthias
