@@ -7,7 +7,7 @@ Matthias Buß
   - 3.4 CouchDB
   - 3.5 Vor- und Nachteile
 
-- 4. Analyse - Warum sich OODB am Markt nicht durchsetzen konnte
+- Analyse - Warum sich OODB am Markt nicht durchsetzen konnte
 
 
 Max Schaphaus
@@ -31,7 +31,7 @@ Svenja Haberditzl
   - 2.8 Datenbanksysteme
   - 2.9.1 Vorteile   
 
-- 5. Fazit
+- Fazit
 
 
 
