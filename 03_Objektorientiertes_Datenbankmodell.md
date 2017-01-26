@@ -184,7 +184,7 @@ Durch die zwei beschriebenen Möglichkeiten der Einkapselung lassen sich auch di
 
 ## Klassen
 Eine *Klasse* ist eine Schablone, aus der neue Objekte erzeugt werden können, die dann die an der Schnittstelle definierten Operationen besitzen. Sie stellt eine Menge von Objekten mit Attributen dar (vgl. HEUER, 1997, S. 219).   
-Ein *Attribut* wird nur ein mal pro Klasse angelegt und bleibt dann bestehen. Nachfolgend ein Beispiel zur Definition einer Klassen:
+Ein *Attribut* wird nur ein mal pro Klasse angelegt und bleibt dann bestehen. Nachfolgend ein Beispiel zur Definition einer Klasse:
 
 ```
 CLASS Adressen
