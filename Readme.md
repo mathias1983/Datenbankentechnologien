@@ -44,19 +44,20 @@ Analysieren Sie die Verbreitung von OODB und grenzen OODB von Dokumentendatenban
        2.3 Klassen  
        2.4 Vererbung
        2.5 Operationen
-       2.6 Datenbankmodelle
-           2.6.1 Iris
-           2.6.2 O2
-           2.6.3 Extra
-           2.6.4 Extrem
-           2.6.5 Cocoon
-       2.7 Datenbank- und Abfragesprache
-       2.8 Datenbanksysteme
-           2.8.1 db4o
-           2.8.2 ZODB
-       2.9 Vor- und Nachteile
-           2.9.1 Vorteile
-           2.9.2 Nachteile
+       2.6 Der ODMG-Standard
+       2.7 Datenbankmodelle
+           2.7.1 Iris
+           2.7.2 O2
+           2.7.3 Extra
+           2.7.4 Extrem
+           2.7.5 Cocoon
+       2.8 Datenbank- und Abfragesprache
+       2.9 Datenbanksysteme
+           2.9.1 db4o
+           2.9.2 ZODB
+       2.10 Vor- und Nachteile
+           2.10.1 Vorteile
+           2.100.2 Nachteile
            
     3. Dokumentenorientiertes Datenbankmodell
        3.1 Einleitung und NoSQL
