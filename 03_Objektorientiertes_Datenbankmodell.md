@@ -184,10 +184,19 @@ Durch die zwei beschriebenen Möglichkeiten der Einkapselung lassen sich auch di
 
 ## Klassen
 Eine *Klasse* ist eine Schablone, aus der neue Objekte erzeugt werden können, die dann die an der Schnittstelle definierten Operationen besitzen. Sie stellt eine Menge von Objekten mit Attributen dar (vgl. HEUER, 1997, S. 219).   
-Ein *Attribut* wird nur ein mal pro Klasse angelegt und bleibt dann bestehen.
+Ein *Attribut* wird nur ein mal pro Klasse angelegt und bleibt dann bestehen. Nachfolgend ein Beispiel zur Definition einer Klassen:
+
+```
+CLASS Adressen
+	{public: STRING PLZ;
+	 STRING Ort;
+	 STRING Straße;
+	 STRING Hausnummer};
+```
+
 Es existieren unterschiedliche Arten von Klassen, welche nachfolgend kurz erläutert werden sollen (vgl. MEIER & WÜST, 2000, S. 22).   
 Zum Einen werden Klassen anhand ihrer Position in der Klassenhierarchie benannt. Dabei gibt es die Unterscheidung zwischen Unter- und Oberklasse. Eine Oberklasse steht wie der Name bereits vermuten lässt in der Hierarchie auf einer oberen Ebene und kann ihre Attribute und dessen Werte an die darunter liegenden Ebenen weitergeben. Die Unterklassen befinden sich in der Hierarchie auf den unteren Ebenen und erben Attribute und dessen Werte von den Oberklassen. Damit sind diese miteinander verknüpft und teilen sich die Informationen, die sie jeweils beinhalten. Ein Programmierer kann somit bei jeder Klasse, die er neu erstellt entscheiden, welche Position sie in der Hierarchie hat und welche Eigenschaften ihr somit zugeordnet werden können (vgl. HEUER, 1997, S. 175f.).   
-Die Definition einer Klasse in einer objektorientierten Programmiersprache umfasst Attribute und Methoden, die je nach Programmiersprache unterschiedlich eingekapselt sein können.
+Die Definition einer Klasse in einer objektorientierten Programmiersprache umfasst Attribute und Methoden, die je nach Programmiersprache unterschiedlich eingekapselt sein können. 
 Eine andere Art ist ebenfalls an dieser Stelle zu nennen und diese wird als Metaklasse benannt. Bei einer Metaklasse können die Objekte dieser Klasse selber eine solche darstellen. Dabei besitzen Metaklassen die gleichen Elemente wie jede andere Klasse auch, wozu auch Variablen und ein Protokoll zählen. Ein Protokoll wird dabei als die Menge aller Meldungsnachrichten welcher eine Klasse zur Verfügung hat (vgl. HEUER, 1997, S. 217f.).
 Es können 2 Unterarten der Metaklasse unterschieden werden:
 
