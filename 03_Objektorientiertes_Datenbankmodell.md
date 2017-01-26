@@ -250,7 +250,26 @@ Nachdem, wie in vorausgehenden Kapiteln beschrieben, komplexe Typen beim Umgang 
 (vgl. Heuer 1997, S. 285)
 
 
+## Der ODMG-Standard
 
+Im Bereich der objektorientierten Datenbanken existierten lange Zeit keine einheitlichen Vorschriften und Vereinbarungen. Deshalb schlossen sich im Jahre 1993 mehrere Unternehmen zusammen, um einen Standard zu definieren. Die folgenden Gründer waren dabei:
+
+- xy
+- xy
+- xy
+- xy
+- xy
+- xy
+- xy
+
+Damit auch sichergestellt werden konnte, dass die getroffenen Entscheidungen auch sinnvoll sind und die bestmöglichsten Einstellungen  getroffen wurden fand sich eine Gruppe aus unterschiedlichen Firmen, die viel in dem Bereich der IT tätig sind und somit viel Erfahrung aufweisen, um vertrauensvolle Kritik äußern zu können. Die Mitglieder dieser Gruppe testete die jeweiligen Versionen des ODMG und gaben ihre Erkenntisse weiter an die Entscheider. Daraus entwickelte sich im Laufe der Jahre ein immer mehr verfeinerte OMGD-Standard.
+
+Der Standard besteht dabei aus folgenden Teilen:
+
+- xy
+- xy
+- xy
+- xy
 
 
 ## Datenbankmodelle
