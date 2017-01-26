@@ -252,24 +252,33 @@ Nachdem, wie in vorausgehenden Kapiteln beschrieben, komplexe Typen beim Umgang 
 
 ## Der ODMG-Standard
 
-Im Bereich der objektorientierten Datenbanken existierten lange Zeit keine einheitlichen Vorschriften und Vereinbarungen. Deshalb schlossen sich im Jahre 1993 mehrere Unternehmen zusammen, um einen Standard zu definieren. Die folgenden Gründer waren dabei:
+Im Bereich der objektorientierten Datenbanken existierten lange Zeit keine einheitlichen Vorschriften und Vereinbarungen. Deshalb schlossen sich im Jahre 1991 mehrere Unternehmen zusammen, um einen Standard zu definieren. Daraus entstand die ODMG - Object Data Management Group. Die folgenden Gründer waren dabei:
 
-- xy
-- xy
-- xy
-- xy
-- xy
-- xy
-- xy
+- Object Design
+- Objectivity
+- ONTOS
+- O2 Technology
+- Versant Object Technology
+- SunSoft
 
-Damit auch sichergestellt werden konnte, dass die getroffenen Entscheidungen auch sinnvoll sind und die bestmöglichsten Einstellungen  getroffen wurden fand sich eine Gruppe aus unterschiedlichen Firmen, die viel in dem Bereich der IT tätig sind und somit viel Erfahrung aufweisen, um vertrauensvolle Kritik äußern zu können. Die Mitglieder dieser Gruppe testete die jeweiligen Versionen des ODMG und gaben ihre Erkenntisse weiter an die Entscheider. Daraus entwickelte sich im Laufe der Jahre ein immer mehr verfeinerte OMGD-Standard.
+Damit auch sichergestellt werden konnte, dass die getroffenen Entscheidungen auch sinnvoll sind und die bestmöglichsten Einstellungen  getroffen wurden fand sich eine Gruppe aus unterschiedlichen Firmen, die viel in dem Bereich der IT tätig sind und somit viel Erfahrung aufweisen, um vertrauensvolle Kritik äußern zu können. Die Mitglieder dieser Gruppe testete die jeweiligen Versionen des ODMG und gaben ihre Erkenntisse weiter an die Entscheider. Daraus entwickelte sich im Laufe der Jahre ein immer mehr verfeinerte OMGD-Standard. Zu den Beratern der Testergruppe gehören unter anderem folgende Unternehmen:
 
+- Hewlett-Packard
+- Sybase
+- Digital Equipment
+- Texas Instruments
+- Poet
+
+Nach diversen Versionen, die stetig weiterentwickelt wurden, ist die Version 3.0 die derzeit aktuellste. Diverse Quellen besagen, dass derzeit an der Version 4 gearbeitet wird.
 Der Standard besteht dabei aus folgenden Teilen:
 
-- xy
-- xy
-- xy
-- xy
+- ein einheitliches Objektmodell
+- eine dieses Modell realisierende Objektdefinitionssrache mitsamt einer Objektbeschreibungssprache
+- ein zugehöriges objektorientiertes Metamodell
+- eine modelladäquate Abfragesprache
+- sprachkonsistente Implementierungsvorschriften für die Anbindung von C++, Smalltalk und Java
+
+Durch die schwindende Popularität von objektorientierten Datenbanken in den letzten Jahren löste sich die ODMG auf und der Standard wird nun unter der OMG begleitet.
 
 
 ## Datenbankmodelle
