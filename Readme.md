@@ -57,7 +57,7 @@ Analysieren Sie die Verbreitung von OODB und grenzen OODB von Dokumentendatenban
            2.9.2 ZODB
        2.10 Vor- und Nachteile
            2.10.1 Vorteile
-           2.100.2 Nachteile
+           2.10.2 Nachteile
            
     3. Dokumentenorientiertes Datenbankmodell
        3.1 Einleitung und NoSQL
