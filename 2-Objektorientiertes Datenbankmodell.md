@@ -251,7 +251,9 @@ Auch der Faktor der Erweiterbarkeit eines Projekts ist durch die Möglichkeit de
 Nachdem, wie in vorausgehenden Kapiteln beschrieben, komplexe Typen beim Umgang mit objektorientierten Datenbanken, fixer Bestandteil dieser sind, ist es ebenso erforderlich entsprechende Operationen nutzen zu können, um mit diesen komplexen Typen arbeiten zu können. Passend zu den bereits bekannten drei Typkonstruktoren, existieren für diese entsprechende  Standardoperatoren (vgl. Heuer 1992, S. 285).
 
 **Tupelkonstruktor** Für den Tupelkonstruktor existieren die Operatoren "Komponentenzugriff" sowie "Test auf Gleichheit/Ungleichheit". Beim Komponentenzugriff kann in einer Art Kurzform auf Elemente zugegriffen werden, bspw. in Beispiel 1 aus dem Abschnitt Datentypen per Adresse.Ort auf den Ort. Über den Operator  "Test auf Gleichheit/Ungleichheit" bietet die Möglichkeit zwei komplexe Tupel mit Komponenten  zu vergleichen. Erforderlich dazu ist, dass diese im Kontext Anzahl und Typ zumindest verträglich sind.
+
 **Mengenkonstruktor** Für den Mengenkonstruktor existieren diverse Operationen. Diese sind "Zugriff auf ein Element durch Iteratoren", "Test auf ein Element", "Vergleich von Mengen" sowie weitere Mengenoperationen (Vereinigung, Differenz, Durchschnitt). Durch die Iteratoren können alle Elemente der Menge durchlaufen werden. Der "Test auf Elemente" beinhaltet hingegen Vergleichsoperatoren für Mengen wie gleich, echte Teilmenge von, unechte Teilmenge von, ungleich, echte und unechte Obermenge von. Die zuvor genannten üblichen Mengenoperationen Vereinigung/Durchschnitt/Differenz können nur verwendet werden, wenn die Elementtypen, mit denen die Operationen ausgeführt werden sollen, hierfür geeignet sind.
+
 **Listenkonstruktor** Beim Listenkonstruktor, der Elemente in geordneter Reihenfolge enthält, können folgende Operatoren genutzt werden. Zufriff auf ersten Element (first), nächstes Element (next) und letztes Element (last). Ebenso ist es möglich eine Teilliste ohne erstes Element (tail) zu erstellen. Zusätzlich kann auch der Listenkonstruktor mittels Iterator in vorgegebener durchlaufen werden. Das Zusammenfügen von Listen (Konkatenation) bietet sich ebenfalls an, verträgliche Elementtypen vorausgesetzt.
 (vgl. Heuer 1992, S. 285)
 
@@ -294,7 +296,9 @@ Folgende Kategorisierung ist dabei denkbar. Im Detail werden anschließend die M
 
 
 **Modelle mit Typkonstruktoren** Diese sind wertebasiert, noch nicht objektorientiert und umfassen diverse Modelle für geschachtelte Relationen und komplexe Objekte. Dabei existieren als Besonderheiten die PNF-Relation sowie eine Erweiterung verallgemeinerte geschachtelte Relationen.
+
 **Modelle mit Beziehungen und Objektidentität** In dieser Kategorie lassen sich Erweiterungen des Entity-Relationship sowie funktionalen Modells zusammenfassen. Ebenso Modelle für zusammengesetzt (komplexe) Objekte.
+
 **Modelle mit Klassen und Strukturhierarchie** Die Modelle in dieser Kategorie entsprechen den in vorangegangenen Kapiteln beschriebenen Anforderungen und Eigenschaften von OODBs. Als Beispiele werden die Datenmodelle Iris, O2, Extra, Extrem und Cocoon herangezogen.
 (vgl. Heuer 1992, S. 401f.)
 
@@ -338,6 +342,7 @@ Zunächst ist zu beachten, dass es zwei generelle Unterscheidungen bei den Sprac
 Als Datenbanksprachen sind die gängigen Programmiersprachen anzusehen. Die verschiedenen Datenbanksysteme unterstützen dabei zumeist den gleichen Kern aus weit verbreiteten Sprachen, der aus Java, C++ und XML besteht. Die Unterschiede sind in weiteren unterstützten Sprachen zu sehen. Dabei bieten Systeme, mit einer hohen Auswahl an Sprachen für Unternehmen eine bessere Möglichkeit, da sie so dieses System auch für Projekte verwenden können, die eine andere Sprache benötigen als andere. In so einem Fall muss also nicht das System gewechselt werden, weil dieses nicht den Anforderungen entspricht. Ein Wechsel eines Systems zieht immer Nachteile wie Einarbeitungsaufwand und Kosten für dieses nach sich. Allerdings sind die Kosten für ein System mit Unterstützung vieler Sprachen auch höher. Deshalb sollte jeder Programmierer bzw. die Unternehmen sich vorher darüber im Klaren sein wofür genau sie das System verwenden wollen.
 
 ## 2.9 Datenbanksysteme
+
 Um eine Datenbank möglichst effizient aufbauen und verwalten zu können werden häufig Datenbanksysteme verwendet. Diese sind für die Speicherung von Daten ebenso verantwortlich wie für den Zugriff auf die so hinterlegten Informationen.
 Generell ist festzuhalten, dass es verschiedene Anbieter von objektorientierten Datenbanken gibt, welche durchaus Unterschiede aufzuweisen haben, auch wenn das Prinzip an sich im Kern gleich ist. Dennoch ist es wichtig sich mit den unterschiedlichen Möglichkeiten auseinanderzusetzen, um möglichst den passenden Anbieter für das gewünschte Projekt zu wählen. Als sinnvoll anzusehen ist es sich bereits gedanklich mit weiteren noch folgenden Projekten zu beschäftigen, um möglichst eine Wahl zutreffen, die nicht bei jeder neuen Entwicklung wieder geändert werden muss, was eine Einarbeitungszeit der Programmierer nach sich zieht.
 Anzumerken ist hier noch, dass es in den Anfängen der objektorientierten Datenbanken mehr Anbieter zu verzeichnen gab, da die Verbreitung damals noch anders verteilt war und diese noch nicht von den relationalen Modellen verdrängt wurden.
@@ -357,7 +362,9 @@ Die Datenbank ZODB ist ein weiterer Vertreter der objektorientierten Datenbanken
 Der Einblick in den Aufbau der beiden Beispiele objektorientierter Datenbanken hat gezeugt, dass sich diese durchaus unterscheiden hinsichtlich der Möglichkeiten und der Funktionen. Während ZODB auf Python basiert arbeitet db4o mit Java und so können Programmierer die Wahl nach ihrer bevorzugten Programmiersprache auswählen. Weiterhin ist ZODB auch für Webanwendungen anwendbar, was nicht bei allen Systemen der Fall ist. Je nachdem für welches Projekt die Datenbank demnach eingesetzt werden soll, sind diese Möglichkeiten vorher genau zu analysieren und abzuwägen.
 
 ## 2.10 Vor- und Nachteile OODB
+
 ### 2.10.1 Vorteile
+
 Das Prinzip der objektorientierten Datenbanken bietet einige Vorteile, welche nachfolgend aufgelistet und erläutert werden sollen.
 
 Ein großer Vorteil von der Verwendung objektorientierte Datenbanken ist die Effizienz, die diese mit sich bringt. Es ist nicht einfach eine objektorientierte Programmiersprache in eine andere Datenbankart zu integrieren, da dort eine Trennung der Daten und Funktionen stattfinden muss. Deshalb ist es von Vorteil wenn dort mit objektorientierten Datenbanken gearbeitet wird, da diese Trennung nicht von Nöten ist und eine Integration vereinfacht. Die Konzepte der objektorientierten und relationalen Datenbank unterscheiden sich in einigen wichtigen Punkten voneinander. Deshalb ist eben diese Integration in ein andersartig gestaltetes Konzept als schwieriger zu betrachten. Zudem können bei der Integration Probleme auftreten, deren Beseitigung Fachwissen und Zeit benötigt. Außerdem müssen die Programmierer sich so mit beiden Konzepten auskennen, um diese richtig miteinander verknüpfen zu können. Bei einer reinen objektorientierten Umsetzung ist das Fehlerrisiko sehr gering. Die Vermittlung zwischen unterschiedlichen Konzepten, die ansonsten von Nöten wäre, fällt somit weg. Normalerweise wird diese durch Softwarekomponenten realisiert, die zusätzlich verwendet werden müssen und einen erhöhten Aufwand bedeuten.   
@@ -372,6 +379,7 @@ Durch die Möglichkeit der Wertevererbung  bietet objektorientierte Datenbanken 
 Bei einer Abfrage von Objekten aus einer objektorientierten Datenbank können gezielt einzelne Objekte abgefragt werden. Dies ist bei SQL-Datenbanken nicht der Fall, da dort als Ergebnis eine Gruppe von Elementen folgt. Die Datenbank ist demnach in der Lage zu sehen welche Daten zusammengehören und kann deshalb gezielte Resultate ausgeben.
 
 ### 2.10.2 Nachteile
+
 Die Verwendung von OODBs bietet neben einigen Vorteilen auch diverse Nachteile. Kommt man an dieser Stelle nochmal zurück, zum zu Anfang genannten Beispiel 2 
 (Objekttyp Bücher), zeigt sich, dass Daten redundant gespeichert werden müssten, falls z.B. der Verlag um weitere Informationen wie Adresse o.ä. angereichert 
 würde. Sobald in einem mehrere Bücher erscheinen, würden diese Zusatzinformationen zum Verlag mehrfach gespeichert werden (vgl. Heuer 1992, S. 286).
