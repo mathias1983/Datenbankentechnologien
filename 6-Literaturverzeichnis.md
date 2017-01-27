@@ -46,7 +46,7 @@ object-oriented-database-oodb. — Abgerufen am 08.01.2017
    
 Hohenstein, Uwe ; Lauffer, Regina ; Schmatz, Klaus-Dieter ; Weukert, Petra: Objektorientierte Datenbanksysteme - ODMG-Standard, Produkte, Systembewertung, Benchmark, Tuning : Springer, 1996 - ISBN 9783663057833 
 
-Hughes, John G.: Onjektorientierte Datenbanken : Carl Hanser Verlag, 1992 - ISBN 3446165835
+Hughes, John G.: Objektorientierte Datenbanken : Carl Hanser Verlag, 1992 - ISBN 3446165835
 
 Heuer, Andreas: Objektorientierte Datenbanken - Konzepte, Modelle, Systeme : Addison-Wesley, 1992 - ISBN 3893193154
 
