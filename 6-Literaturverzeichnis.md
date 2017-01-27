@@ -42,7 +42,7 @@ THAKUR, DINESH: What is Object Oriented Database (OODB)? Advantages and Disadvan
 of OODBMSS. URL http://ecomputernotes.com/database-system/adv-database/
 object-oriented-database-oodb. — Abgerufen am 08.01.2017
    
-   
+--- 
    
 Hohenstein, Uwe ; Lauffer, Regina ; Schmatz, Klaus-Dieter ; Weukert, Petra: Objektorientierte Datenbanksysteme - ODMG-Standard, Produkte, Systembewertug, Benchmark, Tuning : Springer, 1996 - ISBN 9783663057833 
 
