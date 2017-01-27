@@ -211,9 +211,9 @@ Eine andere Art von Klassen stellen die *Beziehungsklassen* dar. Diese zeichnen 
 Die *abstrakten Klassen* sind eine weitere Klassenart, eigentlich keine richtige Klasse sind. Sie sind lediglich künstliche Klassen, die dazu da sind Objektmengen zu verallgemeinern (vgl. MEIER & WÜST, 2000, S. 34f.).   
 Bei einer *persistenzfähigen Klasse* werden die Attribute dauerhaft in der Datenbank gespeichert (vgl. MEIER & WÜST, 2000, S. 40). Dabei können diese Klassen zwei verschiedene Objektarten in sich tragen:
 
-- **transiente Objekte:**   
+-**transiente Objekte:**   
     Sie sind dauerhafte Objekte, die ihren Zustand von Zeit zu Zeit abspeichern, so dass nach 								einem Absturz des Systems der letzte Zustand wiederhergestellt werden kann (vgl.MEIER & WÜST, 							2000, S. 40).
-- **persistente Objekte:**   
+-**persistente Objekte:**   
     Sie sind nicht dauerhaft und speichern somit ihren Zustand nicht ab. Kommt es zu einem 								     Systemabsturz, so existiert dieses Objekt nicht mehr und muss erst neu erstellt werden 								(vgl. MEIER & WÜST, 2000, S. 40).
 
 Bei einer objektorientierten Datenbank werden die Klassendefinitionen und die Instanziierungen der jeweiligen Klasse gespeichert. Dadurch sind diese einwandfrei identifizierbar. 
