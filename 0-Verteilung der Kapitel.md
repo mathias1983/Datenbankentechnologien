@@ -1,4 +1,4 @@
-# Verteilung der Kapitel
+# 0. Verteilung der Kapitel
 
 Hier werden die einzelnen Mitglieder der Gruppe aufgelistet mit den Kapiteln bzw. Unterkapiteln, die jeweils bearbeitet wurden.
 
