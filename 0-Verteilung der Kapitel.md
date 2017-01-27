@@ -4,7 +4,7 @@ Hier werden die einzelnen Mitglieder der Gruppe aufgelistet mit den Kapiteln bzw
 
 ---
 
-Matthias Buß
+Mathias Buß
 
 - Dokumentenorientiertes Datenbankmodell
   - 3.1 Einleitung und NoSQL

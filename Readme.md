@@ -13,9 +13,9 @@ author:
 ---
 
 Mathias Buß   
-Matrikel-Nr.:  
-Hochschule:   
-E-Mail:
+Matrikel-Nr.:798937  
+Hochschule: Beuth Hochschule für Technik Berlin   
+E-Mail:s55079@beuth-hochschule.de
 
 Svenja Haberditzl   
 Matrikel-Nr.: 830791   
