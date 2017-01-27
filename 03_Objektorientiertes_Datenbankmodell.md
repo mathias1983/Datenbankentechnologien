@@ -1,9 +1,9 @@
-# Objektorientiertes Datenbankmodell
+# 2. Objektorientiertes Datenbankmodell
 
 Im Folgenden soll das Konzept von objektorientierten Datenbanken näher beleuchtet werden. Durch die Betrachtung der einzelnen Elemente der Datenbank wird ein Überblick über diese gegeben, welcher für die anschließenden Vor- und Nachteile sowie die Analyse der Ausgangsfrage wichtig ist.
 
 
-## Konzept
+## 2.1 Konzept
 
 Das Konzept hinter objektorientierten Datenbankmodellen setzt sich eigentlich aus zwei Konzepten zusammen, die als 
 Synthese betrachtet, das objektorientierte Datenbankmodell darstellen.
@@ -112,17 +112,17 @@ Neben den Grundbedingungen sowie optionalen Anforderungen an objektorientierte D
 
 Somit zeigt sich, dass es nicht die eindeutige Beschreibung dessen gibt, wie ein OODBS aussehen muss. Vielmehr werden sowohl aus Sicht der Objektorientierung wie auch aus Sicht der herkömmlichen (relationalen) Datenbanken Anforderungen gestellt, die ein OODBS erfüllen muss, optinal erfüllen kann sowie weiteren Punkten die Programmierer, wenn gewünscht, nutzen können.
 
-## Objekte, Datentypen und Kapselung
+## 2.2 Objekte, Datentypen und Kapselung
 Objekte, Datentypen und Kapselung sind drei Kernaspekte von objektorientierten Datenbanksystemen. Diese werden nachfolgend nochmal detailliert dargestellt.
 
-### Objekte
+### 2.2.1 Objekte
 Wie der Name bereits nahelegt, bilden Objekte die Grundbausteine, aus denen objektorientierte Anwendungen aufgebaut werden. Dabei ist jedes Objekt als eigenständige Einheit zu betrachten. Ein Objekt enthält neben den Nutzdaten (Attributwerte) auch Methoden/Operationen, zur Steuerung des Verhaltens (vgl. Meier 2000, S. 3).
 Der Begriff Objekt kann dabei ähnlich wie in der realen Welt (Gegenstand), als abstrakter Begriff verstanden werden, der einen bestimmten Ausschnitt widerspiegelt. Durch seine Attribute und Methoden ist jedes Objekt charakterisiert (vgl. Meier 2000, S. 17).
 Die Attribute der Objekte sind dabei, anders als in relationalen Datenbanken, nicht direkt veränderbar. Jedes Objekt stellt entsprechende Methoden bereit, um Operationen auf den Daten auszuführen.
 Zusätzlich ist jedes Objekt durch ein sogenanntes Surrogat eindeutig indentifizierbar. Dabei sind Surrogate eindeutige Identifikationsschlüssel, die unveränderbar sind und vom Datenbanksystem gebildet werden. Ein Surrogat wird nur einmalig vergeben, auch wenn das entsprechende Objekt gelöscht wird.
 Surrogate werden dabei systemweit und unabhängig von Objekteigenschaften wie Attributen oder Methoden generiert und bleiben auch bei Veränderung von Attributwerten unverändert. Bei verteilten Datenbanken muss garantiert sein, dass Surrogate auch ortsübergreifend eindeutig sind. So können diese ihrem eigentlichen Zweck als Stellvertreter für die Objekte entsprechen. Surrogate entsprechend somit der Objektidentität aus dem Abschnitt Konzept (vgl. Meier 2000, S. 19f.).
 
-### Datentypen
+### 2.2.2 Datentypen
 Bei den Datentypen wird zwischen den standard und komplexen Datentypen unterschieden. Jedes Datenbankmodell beinhaltet dabei eine gewisse Anzahl von Standard-Datentypen, wie bspw. integer, boolean, character oder date und time für Datumswerte und Uhrzeiten (vgl. Heuer 1997, S. 278).
 
 Da diese Datentypen meist nicht ausreichen um entsprechende Strukturen widerzuspiegeln, werden bei objektorientierter Herangehensweise Typkonstruktoren eingesetzt. Mit Hilfe dieser Typkonstruktoren, können aus den wenigen Standard-Datentypen beliebig viele kompliziertere Datentypen erzeugt werden. Zum Einsatz kommen meist mindestens der Tupel-, Mengen- und Listenkonstruktor (vgl. Heuer 1997, S. 279).
@@ -162,7 +162,7 @@ SET OF(TUPLE OF(ISBN: STRING,
 (vgl. Heuer 1997, S. 279f.)
 
 
-### Kapselung
+### 2.2.3 Kapselung
 Um unkontrollierte Updates auf Attributwerten zu verhindern, ist es nötig, abstrakte Datentypen (ADTs) sowie Einkapselung in OODMs zu nutzen. Auf diesem Wege können unkontrollierte Updates ausgeschlossen werden (vgl. Heuer 1997, S. 381).
 
 Die aus der objektorientierten Programmierung bekannten Klassen sind in diesem Kontext vergleichbar mit der Implementierung eines abstrakten Datentyps, da auch bei ADTs nur die auf diese anwendbaren Funktionen nach außen gegeben werden. Als abstrakten Datentyp können dann bestimmte Objekttypen gekennzeichnet werden. Dadurch bleibt deren Struktur für alle generischen Update- und Anfrageoperationen, die auf dem Datenbanksystem ausgeführt werden, verborgen. Die Werte innerhalb der Abstrakten Datentypen lassen sich in Folge nur noch über speziell definierte Anfrage- und Updatefunktionen lesen und verändernn. In Summe stellen abstrakte Datentypen also Klassen mit ausschließlich als privat gekennzeichneten Attributen dar.
@@ -182,7 +182,7 @@ Beide Formen der Einkapselung haben dabei ihre Berechtigung, je nach dem wo dies
 Durch die zwei beschriebenen Möglichkeiten der Einkapselung lassen sich auch diverse Zwischenstufen umsetzen. Ob eine Programmiersprachen-Kapselung durch die ausschließliche Verwendung von ADTs oder eine Datenbank-Kapselung ohne Verwendung von ADTs oder eine Mischform, bleibt abhängig vom jeweiligen Anwendungsfall.
 
 
-## Klassen
+## 2.3 Klassen
 Eine *Klasse* ist eine Schablone, aus der neue Objekte erzeugt werden können, die dann die an der Schnittstelle definierten Operationen besitzen. Sie stellt eine Menge von Objekten mit Attributen dar (vgl. HEUER, 1997, S. 219).   
 Ein *Attribut* wird nur ein mal pro Klasse angelegt und bleibt dann bestehen. Nachfolgend ein Beispiel zur Definition einer Klasse:
 
@@ -229,7 +229,7 @@ Bei der Erstellung einer Klasse sollte unbedingt auf deren Namensgebung besonder
 
 
 
-## Vererbung
+## 2.4 Vererbung
 Die *Vererbung* stellt in objektorientierten Datenbanken einen wichtigen Bereich dar. Durch sie ist es möglich verschiedene Klassen miteinander zu verbinden und sich deren Attribute und Methoden zu nutze zu machen. Dabei kann eine Klasse die Eigenschaften einer anderen erben oder sie selbst an Klassen vererben. Diese Klassen stehen dann jeweils in Beziehung zueinander, was grafisch verdeutlicht wird durch die Verwendung verschiedener Symbole, die eindeutig aufzeigen wer von wem erbt (vgl. HUGHES, 1992, S. 53).   
 Es wird zwischen unterschiedlichen Arten der Vererbung unterschieden:
 
@@ -248,7 +248,7 @@ Bei Klassen einer hierarchischen Beziehungsstruktur kommt der Begriff der *Gener
 Das Prinzip der Vererbung hilft nicht nur eine übersichtliche Struktur zu gestalten und unnötige doppelte Attribute zu vermeiden. Ferner wird es auch verwendet, um eben diese Beziehungen zwischen den Klassen aufzuzeigen und deutlich zu machen, welche Klassen auf die gleichen Attribute zurückgreifen und somit einen leichteren Aufbau einer Datenbank zu ermöglichen. Weiterhin ist die Vererbung gerade für größere Unternehmen und Projekte als sehr hilfreich anzusehen. Bei einem großen Umfang einer Anwendung ist es umso wichtiger, dass die einzelnen Programmierer, die an dieser arbeiten, sofort erkennen können wie die einzelnen Elemente zusammenarbeiten. Es muss davon ausgegangen werden, dass neue Angestellte in das Projektteam gelangen und diese müssen sich ohne lange Einarbeitungszeit zurecht finden (vgl. HUGHES, 1992, S. 69).   
 Auch der Faktor der Erweiterbarkeit eines Projekts ist durch die Möglichkeit der Vererbung weniger risikoreich. So können Änderungen und Neuerungen einfacher in das System eingebaut bzw. entfernt werden ohne die Struktur an sich komplett verändern zu müssen. Dies spart viel Aufwand und ist gerade für Unternehmen ein wichtiger Kostenfaktor (vgl. HUGHES, 1992, S. 69).
 
-## Operationen
+## 2.5 Operationen
 Nachdem, wie in vorausgehenden Kapiteln beschrieben, komplexe Typen beim Umgang mit objektorientierten Datenbanken, fixer Bestandteil dieser sind, ist es ebenso erforderlich entsprechende Operationen nutzen zu können, um mit diesen komplexen Typen arbeiten zu können. Passend zu den bereits bekannten drei Typkonstruktoren, existieren für diese entsprechende  Standardoperatoren (vgl. Heuer 1997, S. 285).
 
 
@@ -259,7 +259,7 @@ Nachdem, wie in vorausgehenden Kapiteln beschrieben, komplexe Typen beim Umgang 
 (vgl. Heuer 1997, S. 285)
 
 
-## Der ODMG-Standard
+## 2.6 Der ODMG-Standard
 
 Im Bereich der objektorientierten Datenbanken existierten lange Zeit keine einheitlichen Vorschriften und Vereinbarungen. Deshalb schlossen sich im Jahre 1991 mehrere Unternehmen zusammen, um einen Standard zu definieren. Daraus entstand die ODMG - Object Data Management Group. Die folgenden Gründer waren dabei:
 
@@ -290,7 +290,7 @@ Der Standard besteht dabei aus folgenden Teilen:
 Durch die schwindende Popularität von objektorientierten Datenbanken in den letzten Jahren löste sich die ODMG auf und der Standard wird nun unter der OMG begleitet.
 
 
-## Datenbankmodelle
+## 2.7 Datenbankmodelle
 Im Bereich der OODBs gibt es eine Vielzahl von Datenbankmodellen. Einige dieser Datenbankmodelle werden im folgenden näher betrachtet unter der Prämisse der verwirklichten Konzepte. Ebenso liegt der Fokus auf dem Strukteil der OODBs und weniger auf dem Operationenteil samt Abfragesprachen.
 
 Folgende Kategorisierung ist dabei denkbar. Im Detail werden anschließend die Modelle mit Klassen und Strukturhierarchie näher betrachtet, da diese dem Modell von OODBs entsprechen, welches in vorherigen Kapiteln beschrieben wurdenn.
@@ -301,27 +301,27 @@ Folgende Kategorisierung ist dabei denkbar. Im Detail werden anschließend die M
 **Modelle mit Klassen und Strukturhierarchie** Die Modelle in dieser Kategorie entsprechen den in vorangegangenen Kapiteln beschriebenen Anforderungen und Eigenschaften von OODBs. Als Beispiele werden die Datenmodelle Iris, O2, Extra, Extrem und Cocoon herangezogen.
 (vgl. Heuer 1997, S. 401f.)
 
-### Iris
+### 2.7.1 Iris
 Iris als Datenbankmodell gehört zum objektorientierten Datenbanksystem Iris und besteht aus Objekten, Typen und Funktionen. Es ist als Erweiterung des funktionalen Datenmodells zu sehen. Bei Betrachtung der einzelnen Konzept-Komponenten wie Standard-Datentypen, Typkonstruktoren, Objektidentität, Klassen, Beziehungen und Strukturhierarchie können diese alle als in Iris verwirklicht betrachtet werden. Bei den Typkonstruktoren steht nur TUPLE OF zur Verfügung. SET OF ist simulierbar und somit ebenfalls verwendbar.
 Typen können in Iris einen dynamischen Wertebereich haben und als Objektvorrat verstanden werden. Ebenso können Objekte in mehreren Klassen vorkommen und diese auch wechseln. Beziehungen werde mit Funktionen dargestellt. Diese weisen  sehr allgemeine Kardinalitätsbedingungen auf. Zusätzlich finden Funktionen Anwendung zur Repräsentation von Attributen und Methoden. Als Kardinalitätsbedingen finden Intervallangaben [min, max] Anwendung. Diese geben die Mindest- sowie Maximalanzahl an Argument- und Ergebnistypen einer Funktion an. (vgl. Heuer 1997, S. 413ff.)
 
-### O2
+### 2.7.2 O2
 Das Datenbankmodell O2 ist auch die Grundlage des gleichnamigen OODBS. Bei den Konzeptkomponenten zeigt sich folgendes Bild. Es gibt Standarddatentypen ebenso wie Typkonstruktoren. Bei den Typkonstruktoren gibt es neben den bekannten TUPLE OF, LIST OF, SET OF noch BAG OF. Die Objektidentität  wird sowohl durch abstrakte Werte wie auch duch von Benutzern vergebene Namen erreicht. Klassen samt Instanzen lassen sich ebenfalls definiren. Beziehungen hingegen sind nur darstellbar wenn diese sich mit Komponentenobjekten oder beliebigen Relationen ohne Integritätsbedingungen beschreiben lassen. Bei der Strukturhierarchie kommt eine Typhierarchie zum Einsatz, die mit Mehrfachvererbung implementiert ist. Konflikte, die bei der Mehrfachvererbung auftreten können, werden zwangsweise aufgelöst (Umbenennung). (vgl. Heuer 1997, S. 415f.)
 
-### Extra
+### 2.7.3 Extra
 Extra ist ein Datenbankmodell, welches aus EXODUS, einem erweiterbaren Datenbanksystem heraus erzeugt wurde. Extra stellt dabei die Abkürzung für **Ex**tensible **T**ypes for **R**elations and **A**ttributes dar. Als Datentypen kommen neben den Standard-Datentypen noch benutzerdefinierte ADTs hinzu. Als Typkonstruktoren stehen TUPLE OF, SET OF und ARRAY OF zur Verfügung. Die Objektidentität wird durch REF-Typen in Form von Surrogaten verwirklicht. Klassen hingegen können nur simuliert werden, indem Instanzen zu Typen angelegt werden. Objekte bestimmter Typen können diesen Instanzen hinzugefügt werden. Die Erstellung von Beziehungen ist nicht explizit möglich, sondern lässt sich nur über Relationen oder Komponentenobjekte simulieren. Besonderheit ist die Unterscheidung zwischen der Art der Verweise. REF-Verweise (gemeinsame Komponentenobjekte) oder OWN REF-Verweise (private Komponentenobjekte). Die als Typhierarchie konzipierte Strukturhierarchie bietet die Möglichkeit der Mehrfachvererbung, ebenso Möglichkeiten zur Konfliktauflösung. Der Benutzer kann über Pfadangaben im Konfliktfall zwischen Attributen unterscheiden. Bei fehlender Pfadangabe wird das Attribut der ersten Oberklasse (bei linearer Ordnung) automatisch verwendet. (vgl. Heuer 1997, S. 416f.)
 
-### Extrem
+### 2.7.4 Extrem
 Extrem war zu Anfang eine Erweiterung eines relationalen Modells auf Basis von geschachtelten Relationen sowie Surrogaten. Im Laufe der Zeit hat sich Extrem aber zu einem vollständigen OODM entwickelt. Extrem ist die Abkürzung für **Ext**ended **Re**lational **M**odel und Teil des OSCAR-Systems. Extrem bietet neben Standard-Datentypen und ADTs die Typkonstruktoren TUPLE OF, SET OF und LIST OF. Erweitert werden diese durch den Konstruktor FUNCTION OF, welcher funktionseinbettende Attribute definiert. Die Objektidentität ist über abstrakte Domänen gegeben, welche den Surrogar-Vorrat für die Objektidentitäten bilden. Klassen sind im Extrem-Datenbankmodell ebenfalls vorhanden, wobei zu jeder eine zugrundeliegende Domäne existiert. Diese Domäne ist ein abstrakter Typ (abstrakte Klasse) oder ein Durchschnitt bzw. eine Vereinigung anderer Instanzen (freie Klasse). Objekte können in diesem Modell einer abstrakten und mehreren freien Klassen angehören und zwischen den freien Klassen wechseln. Beziehungen sind in diesem Modell nur über Komponentenklassen simulierbar, wobei 1:1, 1:n und m:n Beziehungen möglich sind. Die Typhierarchie setzt sich aus zwei entkoppelten Komponenten zusammen, der Klassen- und Typhierarchie. Dabei ist eine Mehrfachvererbung möglich und Konflikte werden bereits während der Schemadefinitionszeit durch Umbenennung aufgelöst. Zusätzlich wird zwischen einer Spezialisierung und Generalisierung unterschieden (beliebige Klassen spezialisieren oder generalisieren sich zu freien Klassen).
 (vgl. Heuer 1997, S. 417f.)
 
-### Cocoon
+### 2.7.5 Cocoon
 Als letztes OODBS in dieser Reihe ist Cocoon zu nennen. Dieses bietet neben den Standard-Datentypen samt ADTs bei den Typkonstruktoren allerdings nur SET OF. Die Objektidentität ist ebenfalls gegeben, da Objekte zu abstrakten Domänen gehören. Ebenso bietet Cocoon Klassen, welche Objekte eines abstrakten Typs sammeln. Diese  werden jeweil in einer zugehörigen Instanz zusammengefasst. Die Klassenzugehörigkeit von Objekten kann wechseln und Objekte mehreren Klassen gleichzeitig angehören. Einige Arten von Beziehungen lassen sich in Cocoon simulieren. Hierzu werden Funktionen zur automatischen Verwaltung von inversen Funktionen und Komponentenobjekten  herangezogen. Die Strukturhierarchie liegt als getrennte Typ- und Klassenhierarchie in Cocoon vor. In dieser ist die Mehrfachvererbung möglich. Konflikte werden vermieden, da Funktionsnamen global eindeutig sind.
 (vgl. Heuer 1997, S. 419f.)
 
 Die zuvor beschriebenen Eigenschaften unterschiedlicher objektorientierter Datenbankmodelle hat gezeigt, dass die zu Anfang diskutierten Konzepte objektorientierter Datenbankmodelle, wie Standard-Datentypen, Typkonstruktoren, Objektidentität, Klassen, Beziehungen und Strukturhierarchie in unterschiedlicher Form implementiert sein können.
 
-## Datenbank- und Abfragesprache
+## 2.8 Datenbank- und Abfragesprache
 In dem Bereich der objektorientierten Datenbanken existieren verschiedene Möglichkeiten für Datenbank- und Abfragesprachen. Im Folgenden soll ein kleiner Überblick über diese gewährt werden.
 
 Für den Bereich der objektorientierten Datenbanken wurde eine neue Abfragesprache entwickelt und standardisiert, die den Namen OQL trägt. Im Wesentlichen basiert sie auf der Abfragesprache SQL, wurde aber auf objektorientiert umgeändert und weiterentwickelt. Mit OQL können Datenbanken erstellt und verwaltet werden. Um eine bessere Übersicht zu erhalten worin die Unterschiede zwischen SQL und OQL liegt, sollen diese nachfolgend ausgehend von OQL betrachtet werden:
@@ -340,7 +340,7 @@ Für den Bereich der objektorientierten Datenbanken wurde eine neue Abfragesprac
 Zunächst ist zu beachten, dass es zwei generelle Unterscheidungen bei den Sprachen gibt. Dabei wird zwischen Systemen unterschieden, die eine vollkommene Unabhängigkeit der Sprache bietet und denjenigen, die nur teilweise unabhängig sind.
 Als Datenbanksprachen sind die gängigen Programmiersprachen anzusehen. Die verschiedenen Datenbanksysteme unterstützen dabei zumeist den gleichen Kern aus weit verbreiteten Sprachen, der aus Java, C++ und XML besteht. Die Unterschiede sind in weiteren unterstützten Sprachen zu sehen. Dabei bieten Systeme, mit einer hohen Auswahl an Sprachen für Unternehmen eine bessere Möglichkeit, da sie so dieses System auch für Projekte verwenden können, die eine andere Sprache benötigen als andere. In so einem Fall muss also nicht das System gewechselt werden, weil dieses nicht den Anforderungen entspricht. Ein Wechsel eines Systems zieht immer Nachteile wie Einarbeitungsaufwand und Kosten für dieses nach sich. Allerdings sind die Kosten für ein System mit Unterstützung vieler Sprachen auch höher. Deshalb sollte jeder Programmierer bzw. die Unternehmen sich vorher darüber im Klaren sein wofür genau sie das System verwenden wollen.
 
-## Datenbanksysteme
+## 2.9 Datenbanksysteme
 Um eine Datenbank möglichst effizient aufbauen und verwalten zu können werden häufig Datenbanksysteme verwendet. Diese sind für die Speicherung von Daten ebenso verantwortlich wie für den Zugriff auf die so hinterlegten Informationen.
 Generell ist festzuhalten, dass es verschiedene Anbieter von objektorientierten Datenbanken gibt, welche durchaus Unterschiede aufzuweisen haben, auch wenn das Prinzip an sich im Kern gleich ist. Dennoch ist es wichtig sich mit den unterschiedlichen Möglichkeiten auseinanderzusetzen, um möglichst den passenden Anbieter für das gewünschte Projekt zu wählen. Als sinnvoll anzusehen ist es sich bereits gedanklich mit weiteren noch folgenden Projekten zu beschäftigen, um möglichst eine Wahl zutreffen, die nicht bei jeder neuen Entwicklung wieder geändert werden muss, was eine Einarbeitungszeit der Programmierer nach sich zieht.
 Anzumerken ist hier noch, dass es in den Anfängen der objektorientierten Datenbanken mehr Anbieter zu verzeichnen gab, da die Verbreitung damals noch anders verteilt war und diese noch nicht von den relationalen Modellen verdrängt wurden.
@@ -349,18 +349,18 @@ Zu beachten ist auch welche Schnittstellen und Werkzeuge die einzelnen Systeme u
 
 Nachfolgend sollen nun 2 Vertreter der bekanntesten Datenbanksysteme näher erläutert werden, um einen Einblick über die Möglichkeiten zu geben.
 
-## db40
+### 2.9.1 db40
 
 Zunächst wird an dieser Stelle db4o betrachtet. Dabei handelt es sich um eine objektorientierte Datenbank, die ihren Ursprung im Jahr 2000 fand. Sie ist nicht nur auf ein bestimmtes Betriebssystem beschränkt und somit flexibel einsetzbar. Die aktuelle Version 8.0 ist vom Februar 2011 und wurde von xy erstellt. Die Datenbank ist sowohl als freie als auch als kostenpflichtige Lizenz verfügbar, so dass auch nicht-professionelle Anwender db4o nutzen können. Die Versionen unterscheiden sich im jeweiligen Umfang der Funktionen und Möglichkeiten, die aber für Anfänger ausreichend sind und sich eher auf Unternehmen beziehen. Da sich db4o durch seine kleine Dateigröße von nur 700K auszeichnet und es nur aus einer jar-Datei besteht, kann es einfach integriert und verwendet werden. Es wurde für Java und Mono konzipiert, kann aber auch mit anderen Sprachen verwendet und zusammengeführt werden zu einer Anwendung. Es kann nicht von außen administriert werden und bietet deshalb eine hohe Sicherheit vor Angriffen von außen. Wegen seiner kleinen Dateigröße ist db4o gut geeignet für mobile Anwendungen, da dort eine schnelle Reaktionszeit durch minimale Dateigrößen notwendig ist. Die Installation ist schnell und einfach und kann auch von Anfängern durchgeführt werden. Dazu müssen nur ein paar kurze Befehle ausgeführt werden. Die Speicherung von Objekten erfolgt durch wenige Zeilen Code und diese werden dauerhaft in die Datenbank integriert. Die Struktur von db4o verzichtet komplett auf Tabellen, wodurch eine übersichtliche und einfache Struktur verwirklicht werden kann. Die Datenbank kann direkt in eine Anwendung integriert werden und muss nicht erst extern eingebunden werden. Dies erleichtert den Integrationsaufwand und spart Zeit. Für die objektorientierte Datenbank ist keine bestimmte Abfragesprache nötig, was bedeutet, dass sie ohne weitere Erfahrung verwendet werden kann. Auch für erfahrene Programmierer ist dies praktisch, da sie so bei einem Wechsel der Datenbank nicht jedes Mal ein neues Konzept erlernen und anwenden müssen. Auch die Tatsache, dass es recht viel Literatur zu dem Thema db4o gibt ist für Anfänger hervorragend geeignet und macht den Einstieg leichter. In db4o können Objekte gespeichert werden ohne dass dies einer weiteren Begleitung benötigt. Somit können Objekte ohne weitere Probleme und mit weniger Fehlern in die Datenbank integriert werden. Es ist weder notwendig die zu speichernden Klassen von Oberklassen abzuleiten noch müssen spezielle Schnittstellen implementiert werden. Insgesamt erleichtert db4o die Wartung und das Kennenlernen von Programmierung. Durch die kurze Einarbeitungszeit ist es ideal für jede Form von Anwendern. Durch den einfachen Aufbau, der mit wenigen Zeilen Code erstellt werden kann, ist die objektorientierte Datenbank auch für komplexe größere Projekte mit aufwändigerer Struktur geeignet. Da die Datenbank auf 3 unterschiedliche Abfragemethoden zurückgreifen kann, ist sie zusätzlich recht flexibel in der Anwendung. So können Programmierer Abfragen auf die Art und Weise durchführen, die sie bevorzugen und es muss keine einheitliche Verwendung stattfinden (vgl. SCHÜRMANN, 2007), (vgl. FH Köln).
 
-## ZODB
+### 2.9.2 ZODB
 
 Die Datenbank ZODB ist ein weiterer Vertreter der objektorientierten Datenbanken. Das System wurde 2009 auf den Markt gebracht und wurde für die Programmiersprache Python entwickelt. Damit bietet sie sich als Alternative zu db4o an, welches Python nicht unterstützt. Im Gegensatz zu db4o wird ZODB steitg weiterentwickelt, die neuste Version stammt vom November 2016. ZODB kann ähnlich wie db4o mit wenigen Zeilen installiert und verwendet werden. Auf der Homepage der Datenbank finden sich mehrere kurze Tutorials, die es ermöglichen einen schnellen Einstieg erhalten zu können. Weiterhin werden die einzelnen Möglichkeiten anschaulich erläutert. Somit ist es auch Anfängern möglich sich schnell mit der Datenbank auseinanderzusetzen und mit ihr effizient arbeiten zu können. Die Datenbank hat eine Möglichkeit integriert, um einfach und schnell Tests durchführen zu können, um den erstellten Code auf Fehler und Probleme untersuchen zu können. ZODB eignet sich für Programmierer, die sich voll und ganz auf die Erstellung der Datenbank konzentrieren wollen ohne dabei viel Code erstellen zu müssen. Dabei bietet sie die Möglichkeit einer übersichtlichen Struktur des Aufbaus sowie der integrierten Daten. Durch die Konzentration auf die Sprache Python sollten sich Anwender jedoch vorher bewusst machen, dass sich Komponenten, die Python nicht unterstützen auch nicht mit ZODB verbinden lassen. Wie auch db40 verfügt die Datenbank über eine recht große Community welche bei auftretenden Problemen von enormer Hilfe ist. Weiterhin ist es möglich mit ZODB auch Webanwendungen gestalten zu können. Damit hebt es sich von anderen Anbietern objektorientierter Datenbanken ab und greift in ein aktuelles Feld der Programmierung ein (vgl. ZODB).
 
 Der Einblick in den Aufbau der beiden Beispiele objektorientierter Datenbanken hat gezeugt, dass sich diese durchaus unterscheiden hinsichtlich der Möglichkeiten und der Funktionen. Während ZODB auf Python basiert arbeitet db4o mit Java und so können Programmierer die Wahl nach ihrer bevorzugten Programmiersprache auswählen. Weiterhin ist ZODB auch für Webanwendungen anwendbar, was nicht bei allen Systemen der Fall ist. Je nachdem für welches Projekt die Datenbank demnach eingesetzt werden soll, sind diese Möglichkeiten vorher genau zu analysieren und abzuwägen.
 
-## Vor- und Nachteile OODB
-### Vorteile
+## 2.10 Vor- und Nachteile OODB
+### 2.10.1 Vorteile
 Das Prinzip der objektorientierten Datenbanken bietet einige Vorteile, welche nachfolgend aufgelistet und erläutert werden sollen.
 
 Ein großer Vorteil von der Verwendung objektorientierte Datenbanken ist die Effizienz, die diese mit sich bringt. Es ist nicht einfach eine objektorientierte Programmiersprache in eine andere Datenbankart zu integrieren, da dort eine Trennung der Daten und Funktionen stattfinden muss. Deshalb ist es von Vorteil wenn dort mit objektorientierten Datenbanken gearbeitet wird, da diese Trennung nicht von Nöten ist und eine Integration vereinfacht. Die Konzepte der objektorientierten und relationalen Datenbank unterscheiden sich in einigen wichtigen Punkten voneinander. Deshalb ist eben diese Integration in ein andersartig gestaltetes Konzept als schwieriger zu betrachten. Zudem können bei der Integration Probleme auftreten, deren Beseitigung Fachwissen und Zeit benötigt. Außerdem müssen die Programmierer sich so mit beiden Konzepten auskennen, um diese richtig miteinander verknüpfen zu können. Bei einer reinen objektorientierten Umsetzung ist das Fehlerrisiko sehr gering. Die Vermittlung zwischen unterschiedlichen Konzepten, die ansonsten von Nöten wäre, fällt somit weg. Normalerweise wird diese durch Softwarekomponenten realisiert, die zusätzlich verwendet werden müssen und einen erhöhten Aufwand bedeuten.   
@@ -375,7 +375,7 @@ Durch die Möglichkeit der Wertevererbung  bietet objektorientierte Datenbanken 
 Weiterhin hilft ein ODBMS beim Zugriff auf Daten. Da Objekte eine komplexe Struktur haben können, sind semantische Zusammenhänge zwischen Objekten dem Datenbanksystem bekannt. Das Datenbanksystem hat also ein Verständnis davon, welche Daten zusammengehören. Dieses Wissen kann bei der Abfrage der Daten mittels einer Abfragesprache wie OQL verwendet werden. Im Gegensatz zu relationalen Datenbanksystemen ist das Ergebnis einer Anfrage nicht eine Menge von Datensätzen. OQL erlaubt die Abfrage einzelner Objekte.
 
 
-### Nachteile
+### 2.10.2 Nachteile
 Die Verwendung von OODBs bietet neben einigen Vorteilen auch diverse Nachteile. Kommt man an dieser Stelle nochmal zurück, zum zu Anfang genannten Beispiel 2 
 (Objekttyp Bücher), zeigt sich, dass Daten redundant gespeichert werden müssten, falls z.B. der Verlag um weitere Informationen wie Adresse o.ä. angereichert 
 würde. Sobald in einem mehrere Bücher erscheinen, würden diese Zusatzinformationen zum Verlag mehrfach gespeichert werden (vgl. Heuer 1997, S. 286).
