@@ -1,6 +1,6 @@
 # 3. Dokumentorientiertes Datenbankmodell
 
-## 3.1 Einleitung und NoSQL
+## 3.1 Einleitung
 
 Datenbanken in einem relationalen Datenbankmodell bestehen im wesentlichen aus 4 Elementen. 
 1. Aus Tabellen, die die eigentlichen abzuspeichernden Informationen zusammenfassen 

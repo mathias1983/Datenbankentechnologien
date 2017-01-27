@@ -60,7 +60,7 @@ Analysieren Sie die Verbreitung von OODB und grenzen OODB von Dokumentendatenban
             2.10.2 Nachteile
            
     3. Dokumentenorientiertes Datenbankmodell
-       3.1 Einleitung und NoSQL
+       3.1 Einleitung
        3.2 Konzept
        3.3 MongoDB
            3.3.1 Indextypen
