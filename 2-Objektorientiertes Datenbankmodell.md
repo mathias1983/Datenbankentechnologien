@@ -235,7 +235,7 @@ Es wird zwischen unterschiedlichen Arten der Vererbung unterschieden:
 - **Mehrfachvererbung:**   
   Eine Klasse erbt von mehreren anderen Klassen und nutzt deren Attribute und Methoden (vgl. Heuer 1992, S. 209f.)
 - **Einfache Vererbung:**   
-  Jede Klasse darf nur von einer anderen Klasse erben und deren Attribute verwenden. (vgl. Heuer 1992,S. 209f.)
+  Jede Klasse darf nur von einer anderen Klasse erben und deren Attribute verwenden. (vgl. Heuer 1992, S. 209f.)
 - **Wertevererbung:**   
   In Objektorientierten Datenbanken können auch die Werte der Attribute einer Klasse mit vererbt werden. (vgl. Heuer 1992, S. 206)
 
