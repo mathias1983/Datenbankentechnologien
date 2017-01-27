@@ -1,4 +1,4 @@
-# Fazit
+# 5. Fazit
 
 Zum Abschluss der Ausarbeitung soll an dieser Stelle ein Fazit folgen. Dazu sollen die Erkenntnisse der vorangegangen Kapitel nochmals kurz zusammengefasst und beleuchtet werden. Weiterhin soll ein Ausblick in die Zukunft aufgezeigt werden.   
 
