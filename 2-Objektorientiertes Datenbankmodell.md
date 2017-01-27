@@ -268,7 +268,7 @@ Im Bereich der objektorientierten Datenbanken existierten lange Zeit keine einhe
 - ONTOS
 - O2 Technology
 - Versant Object Technology
-- SunSoft
+- SunSoft (vgl. Hohenstein et al., 1996, S. 20)
 
 Damit auch sichergestellt werden konnte, dass die getroffenen Entscheidungen auch sinnvoll sind und die bestmöglichsten Einstellungen  getroffen wurden fand sich eine Gruppe aus unterschiedlichen Firmen, die viel in dem Bereich der IT tätig sind und somit viel Erfahrung aufweisen, um vertrauensvolle Kritik äußern zu können. Die Mitglieder dieser Gruppe testete die jeweiligen Versionen des ODMG und gaben ihre Erkenntisse weiter an die Entscheider. Daraus entwickelte sich im Laufe der Jahre ein immer mehr verfeinerte OMGD-Standard. Zu den Beratern der Testergruppe gehören unter anderem folgende Unternehmen:
 
@@ -276,7 +276,7 @@ Damit auch sichergestellt werden konnte, dass die getroffenen Entscheidungen auc
 - Sybase
 - Digital Equipment
 - Texas Instruments
-- Poet
+- Poet (vgl. Hohenstein et al., 1996, S. 20)
 
 Nach diversen Versionen, die stetig weiterentwickelt wurden, ist die Version 3.0 die derzeit aktuellste. Diverse Quellen besagen, dass derzeit an der Version 4 gearbeitet wird.
 Der Standard besteht dabei aus folgenden Teilen:
@@ -285,7 +285,7 @@ Der Standard besteht dabei aus folgenden Teilen:
 - eine dieses Modell realisierende Objektdefinitionssrache mitsamt einer Objektbeschreibungssprache
 - ein zugehöriges objektorientiertes Metamodell
 - eine modelladäquate Abfragesprache
-- sprachkonsistente Implementierungsvorschriften für die Anbindung von C++, Smalltalk und Java
+- sprachkonsistente Implementierungsvorschriften für die Anbindung von C++, Smalltalk und Java (vgl. Meier, 2003, S. 74f.) 
 
 Durch die schwindende Popularität von objektorientierten Datenbanken in den letzten Jahren löste sich die ODMG auf und der Standard wird nun unter der OMG begleitet.
 
@@ -372,8 +372,7 @@ In einer objektorientierten Datenbank ist es einfacher auf die Daten in dieser z
 Dies erleichtert es einem Programmierer gezielte Abfragen an die Datenbank stellen zu können und es erspart Zeit das richtige Objekt aus der Menge der Ergebnisse erst finden zu müssen.   
 Die Performance von Abfragen kann in objektorientierten Datenbanken gesteigert werden, da hier keine Verknüpfungen von Relationen existieren, dies aber in anderen Datenbanken durchaus der Fall ist. Deshalb können Abfragen über die Funktionen der Objekte erfolgen oder es kann eine Abfragesprache verwendet werden. Dies bietet ein hohes Maß an Flexibilität, da der Programmierer nicht nur auf eine Möglichkeit festgelegt ist. Weiterhin ist es in jeder Anwendung das Ziel eine möglichst hohe Performance zu erreichen, was hier unterstützt wird.   
 Durch die Möglichkeit der Wertevererbung  bietet objektorientierte Datenbanken eine direktere Art und Weise innerhalb der Klassenhierarchie mit den Daten zu arbeiten und es kann auf weitere Definitionen und Weitergabe von Informationen, die erst erzeugt werden müssen, verzichtet werden. Für den Programmierer ist es auch einfacher, wenn er so mehrere Schritte in einem vollziehen kann und sich auf das weitere Vorgehen konzentrieren kann, ohne Gefahr zu laufen am Ende etwas übersehen zu haben.   
-Weiterhin hilft ein ODBMS beim Zugriff auf Daten. Da Objekte eine komplexe Struktur haben können, sind semantische Zusammenhänge zwischen Objekten dem Datenbanksystem bekannt. Das Datenbanksystem hat also ein Verständnis davon, welche Daten zusammengehören. Dieses Wissen kann bei der Abfrage der Daten mittels einer Abfragesprache wie OQL verwendet werden. Im Gegensatz zu relationalen Datenbanksystemen ist das Ergebnis einer Anfrage nicht eine Menge von Datensätzen. OQL erlaubt die Abfrage einzelner Objekte.
-
+Bei einer Abfrage von Objekten aus einer objektorientierten Datenbank können gezielt einzelne Objekte abgefragt werden. Dies ist bei SQL-Datenbanken nicht der Fall, da dort als Ergebnis eine Gruppe von Elementen folgt. Die Datenbank ist demnach in der Lage zu sehen welche Daten zusammengehören und kann deshalb gezielte Resultate ausgeben.
 
 ### 2.10.2 Nachteile
 Die Verwendung von OODBs bietet neben einigen Vorteilen auch diverse Nachteile. Kommt man an dieser Stelle nochmal zurück, zum zu Anfang genannten Beispiel 2 

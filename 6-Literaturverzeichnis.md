@@ -41,3 +41,14 @@ de/Ausgaben/2007/09/Konservierungsmittel. — Abgerufen am 12.11.2016
 THAKUR, DINESH: What is Object Oriented Database (OODB)? Advantages and Disadvantages
 of OODBMSS. URL http://ecomputernotes.com/database-system/adv-database/
 object-oriented-database-oodb. — Abgerufen am 08.01.2017
+   
+--- 
+   
+Hohenstein, Uwe ; Lauffer, Regina ; Schmatz, Klaus-Dieter ; Weukert, Petra: Objektorientierte Datenbanksysteme - ODMG-Standard, Produkte, Systembewertung, Benchmark, Tuning : Springer, 1996 - ISBN 9783663057833 
+
+Hughes, John G.: Onjektorientierte Datenbanken : Carl Hanser Verlag, 1992 - ISBN 3446165835
+
+Heuer, Andreas: Objektorientierte Datenbanken - Konzepte, Modelle, Systeme : Addison-Wesley, 1992 - ISBN 3893193154
+
+Meier, Andreas ; Wüst, Thomas: Objektorientierte und objektrelationale Datenbanken - Ein Kompass für die Praxis : dpunkt.verlag GmbH, 2003 - ISBN 3898641910
+
