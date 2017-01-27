@@ -24,7 +24,7 @@ E-Mail: s60779@beuth-hochschule.de
 
 Max Schaphaus   
 Matrikel-Nr.: 7005623   
-Hochschule:   
+Hochschule: Hochschule Emden/Leer   
 E-Mail: max.schaphaus@googlemail.com
 
 **Aufgabenstellung:**   
