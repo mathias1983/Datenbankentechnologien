@@ -1,4 +1,4 @@
-# Einleitung
+# 1. Einleitung
 
 Im Laufe der vergangenen Jahrezehnte, beginnend in den Sechziger Jahren des zwanzigsten Jahrhunderts, haben sich Datenbanken enorm verändert. Angefangen mit der Idee, zwischen Betriebssystem und Anwendungsprogramm eine weitere Softwareschicht zu etablieren um Probleme in der Verarbeitung von Daten in Dateien zu lösen, wird mittlerweile  für das Jahr 2020 ein weltweites Datenwachstum von 40.026 Exabyte prognostiziert (2015: 8591 Exabyte).
 Der Wandel von der Ablösung der Dateiverarbeitung hin zu den in wenigen Jahren prognostizierten jährlichen Datenzuwachsraten ist somit enorm.
