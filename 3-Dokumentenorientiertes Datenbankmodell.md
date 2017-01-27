@@ -1,14 +1,6 @@
-# NoSQL
+# 3. Dokumentorientiertes Datenbankmodell
 
-NoSQL-Datenbanken liefern einen völlig neuen Ansatz zur Speicherung von Daten und
-besitzen üblicherweise kein festes Schema, sind nicht relational und legen weniger Wert auf Konsistenz, als relationale Datenbanken. Die Abkürzung NoSQL ist nicht präzise spezifiziert, wird aber häufig als "Not only SQL" oder auch "non SQL" bezeichnet, was einerseits suggeriert, dass auch in NoSQL-Datenbanken SQL ähnliche Abfragesprachen anzutreffen sind, andererseits soll so die Abgrenzung zu relationalen Modellen verdeutlicht werden.
-Gegenüber relationalen Datenbanken liegen die großen Stärken von NoSQL in der hohen Geschwindigkeit bei der Indexierung von großen Datenmengen, der großen Anzahl von Lese- und Schreiboperationen, die einfachere Skalierbarkeit (gerade horizontal) sowie der besseren Verfügbarkeit, was sie u.a. gerade für den Big Data Bereich oder der Echtzeitanalyse sehr interessant macht. Der daraus resultierende Geschwindigkeitzuwachs geht allerdings nicht selten zu Lasten der Konsistenz, weshalb für ein anstehendes Projekt im Vorfeld genau geplant und abgewogen werden sollte, welcher Art von Aufgaben die Datenbank zu erledigen hat und welche Merkmale sie aufweisen muss, gerade im Hinblick auf das CAP Theorem (vgl. @gilbert, S.3), welches immer nur eine garantierte Ausrichtung in zwei von drei Merkmalen wie Konsistenz, Verfügbarkeit und Partitionstoleranz erlaubt. 
-
-
-
-# Dokumentorientiertes Datenbankmodell
-
-## Einleitung
+## 3.1 Einleitung und NoSQL
 
 Datenbanken in einem relationalen Datenbankmodell bestehen im wesentlichen aus 4 Elementen. 
 1. Aus Tabellen, die die eigentlichen abzuspeichernden Informationen zusammenfassen 
@@ -20,7 +12,11 @@ Klassische relationale Datenbankmodelle folgen üblicherweise einem fest vorgege
 
 Im Kontrast zum relationalen Datenbankmodell kennt das dokumentorientierte Dantenbankmodell kein Konzept eines festen Schemas. Genauso wenig findet man Tabellen, Beziehungen, Zeilen oder Spalten im klassichen Sinn. Oberflächlich betrachtet mag das zunächst wie ein Verlust an Organisation und Intergrität erscheinen. Dokumentorientierte Datenbanken im engl. auch document stores genannt, bieten jedoch vereinzelt ebenfalls ACID Eigenschaften, die den Einsatz einer entsprechenden Datenbank im professionellen Einsatz rechtfertigen. Um die Art und Weise wie Daten in einem dokumentorientem Datenbankmodell gespeichert und organisiert werden besser zu verstehen, werden die folgenden Punkte genauer auf dieses Model eingehen. 
 
-## Konzept
+NoSQL-Datenbanken liefern einen völlig neuen Ansatz zur Speicherung von Daten und
+besitzen üblicherweise kein festes Schema, sind nicht relational und legen weniger Wert auf Konsistenz, als relationale Datenbanken. Die Abkürzung NoSQL ist nicht präzise spezifiziert, wird aber häufig als "Not only SQL" oder auch "non SQL" bezeichnet, was einerseits suggeriert, dass auch in NoSQL-Datenbanken SQL ähnliche Abfragesprachen anzutreffen sind, andererseits soll so die Abgrenzung zu relationalen Modellen verdeutlicht werden.
+Gegenüber relationalen Datenbanken liegen die großen Stärken von NoSQL in der hohen Geschwindigkeit bei der Indexierung von großen Datenmengen, der großen Anzahl von Lese- und Schreiboperationen, die einfachere Skalierbarkeit (gerade horizontal) sowie der besseren Verfügbarkeit, was sie u.a. gerade für den Big Data Bereich oder der Echtzeitanalyse sehr interessant macht. Der daraus resultierende Geschwindigkeitzuwachs geht allerdings nicht selten zu Lasten der Konsistenz, weshalb für ein anstehendes Projekt im Vorfeld genau geplant und abgewogen werden sollte, welcher Art von Aufgaben die Datenbank zu erledigen hat und welche Merkmale sie aufweisen muss, gerade im Hinblick auf das CAP Theorem (vgl. @gilbert, S.3), welches immer nur eine garantierte Ausrichtung in zwei von drei Merkmalen wie Konsistenz, Verfügbarkeit und Partitionstoleranz erlaubt. 
+
+## 3.2 Konzept
 Wie zu Beginn kurz dargestellt, werden für die Speicherung von Daten innerhalb einer dokumentorientierten Datenbank keine Tabellen und Relation zur Speicherung der Daten verwendet. Stattdessen werden Daten, die eine gemeinsame Bedeutung haben, in so genannten Dokumenten aufgenommen. Diese Objekte bestehen im Allgemeinen aus einem oder auch mehreren Schlüssel-Wert Paaren und erlauben es dem Nutzer die Daten nicht normalisiert und nicht fest strukturiert abzulegen. Beides Eigenschaften, die in relationalen Modellen weder gewünscht noch ohne weiteres möglich sind. Dokumentorientierte Datenbanken stellen eine Unterklasse der key-value stores da, die zur Speicherung der Dokumente auf einfache Datenformate wie JSON oder XML zurückgreifen. Beides sind Datenformate, die nicht nur einfach durch den Menschen zu lesen und zu bearbeiten sind, sondern auch das Abspeichern von Informationen in hiraischen Ebenen erlauben. Somit lassen sich auch komplette Dokumente innerhalb von  Dokumenten abspeichern und ineinander verschachtelt, was JOINS und Foreign-Keys absolet macht.
 Doch was macht document stores so performant? Alain Issa und François Schiltz führen in ihrem paper "Document oriented Databases" (vgl. Issa, Schiltz) an, das der Grund für die hohe Geschwindigkeit zum einen darin liegt, dass die zu speichernden Dokumente eher einfach aufgebaut sind und direkt abgespeichert werden können. Lesende Zugriffe sind ebenfalls sehr performant, da weder die Abfrage anaylsiert, noch die Suche auf beteiligte Tabellen ausgedehnt werden muss.
 
@@ -57,12 +53,12 @@ Denkbar wäre es, einen zusätzlichen Wert, als verschachteltes Dokument aufzune
 
 Dadurch, dass das Schema nicht festgeschrieben ist, lässt sich das Dokument fast beliebig erweitern, ganz ohne jegliche Schema Anpassungen. Da nicht jeder Musiker ein Plattenlabel haben muss, ist dieser Wert optional und kann angefügt oder wegelassen werden. Durch das Weglassen dieses Feldes entstehen keine Leerfelder, da die Speicherung der Daten in Reihe erfolgt. Wieviele und welche Felder das Dokument letzendlich enthalten soll, kann zur Laufzeit entschieden werden, sodass strukturelle Entscheidungen am Dokument einfach vorgenommen werden können.
 
-## MongoDB
+## 3.3 MongoDB
 
 MongoDB wurde 2007 vom Unternehmen 10gen entwickelt und später im Jahr 2009 als open source Modell zur Verfügung gestellt. Die Datenbank wurde mit großem Bezug auf heutige Anwendungsfelder und Problemstellungen konzipiert, welche von relationalen Modellen nur mit großem Aufwand bedient werden können, wie u.a. der Fokus auf die horizontale Skalierbarkeit des Systems. Das Dokumentorientierte Datenmodell ermöglicht die, im Vergleich zu relationalen Datenbanken, eine einfache Aufteilung der Datenbank auf mehrere Server. MongoDB ist nicht vollständig ACID kompatibel, da atomare Operationen nur auf Dokumentenebene zur Verfügung stehen. Zum Zeitpunkt der Erstellung dieser Hausarbeit unterstützt MongoDB keine Multi-Dokument Transaktionen. Dokumente werden intern im BSON Format abgespeichert. Die Abkürzung BSON steht für binary JSON und nutzt, wie der Name vermuten lässt, JSON als Teilmenge und erweitert es um weitere Datentypen wie z.B. date oder byte array. Weitere Vorteile dieses Datenformates sind die hohe Geschwindigkeit beim durchsuchen der Datenbank und Geschwindikeitsvorteile beim kodieren und dekodieren zu und von BSON, da C Datentypen verwendet werden.
 MongoDB bietet support für die geläufigsten Programmiersprachen (z.B. Java, Ruby, Python, .NET, PHP, Javascript und viele weitere) und frameworks (Hibernate, Spring, AngularJS, django usw.).
 
-### Indextypen
+### 3.3.1 Indextypen
 
 Für die Indizierung verwendet MongoDB folgende Typen von Indizes, die dabei helfen die Effizienz von Leseoperationen weiter zu verbessern:
 
@@ -91,7 +87,7 @@ Die ObjectID ist ein 12 Byte großer Wert welcher sich aus einem Unix Zeitstempe
 
 Für die Speicherung der Indexdaten verwendet MongoDB intern, so wie viele andere document stores auch, einen B-Tree, der zugriffe in logarithmischer Zugriffszeit O(logn) möglich macht und damit eine hohe Ausführungsgeschwindikeit bietet. 
 
-### Indexeigenschaften
+### 3.3.2 Indexeigenschaften
 
 **Unique Indexes**
 Wie auch in relationellen Datenbanken sorgt diese Eigenschaft dafür, dass keine mehrfachen Wert für einFeld mit einem Index gespeichert werden können.
@@ -105,7 +101,7 @@ Sparse Indexes funktionieren wie normale Indizes, außer dass sie Referenzen zu 
 **TTL Indexes**
 Können genutzt werden Dokumente automatisch, nach einem bestimmten Zeitraum, zu löschen. Praktische Anwendungsfälle sind z. B. Log-Dateien.
 
-### Weitere Features ###
+### 3.3.3 Weitere Features
 Neben den verschieden Indextypen und ihren Eigenschaften bietet die Datenbank weitere sinvolle Funktionen wie 
 
 **MapReduce**
@@ -128,12 +124,12 @@ Mit Hilfe der Replikationsfunktionen lassen sich Daten zwischen einzelnen Server
 **Auto sharding**
 Sharding erlaubt es die Datenbank horizontal zu skalieren und somit auf mehrere Server zu verteilen, was sinnvoll sein kann, wenn eine vertikale Skalierung zu teuer wird oder das Hardware Limit erreicht ist. Manuelles sharding kann mit nahezu jeder Datenbank erreicht werden, was allerdings administrativ sehr aufwendig sein kann. MongoDB unterstützt auto sharding, welches die Daten automatisch auf die einzelnen Server verteilt und dem Administrator so viel von der zusätzlichen Arbeit abnehmen kann. Erreicht wird das durch eine Aufteilung der collections in kleinere Teilmengen, sogenannten chunks. Diese chunks werden auf Maschinen mit replizierten Daten, sogenannten shards verteilt. Damit eine Anwendung nicht wissen muss, wo sich die abzufragenden Daten befinden, existieren Router, auch Mongos genannt, welche Anfragen entgegenehmen und an die richtigen shards weiterleiten und ihre Ergebnisse an die anfragende Anwendung zurückliefern.
 
-## CouchDB
+## 3.4 CouchDB
 CouchDB (Kurzform für cluster of unreliable commodity hardware) wurde das erste Mal im Jahr 2005 released und im Jahr 2008 als Open Source Projekt an die Apache Software Foundation übergeben. Wie MongoDB lassen sich auch mit CouchDB die Daten sehr horizontal skalieren. Bei CouchDB liegt der Focus dabei aber auf Verfügbarkeit anstatt auf Konsistenz. Konzipiert wurde die Datenbank in Erlang, einer Programmiersprache, die sehr stark auf Nebenläufigkeit ausgelegt ist. Zur Speicherung der Daten wird das JSON Format verwendet. Auch in CouchDB funktioniert ACID auf Dokumentenebene, die wie auch in MongoDB kein festes Schema aufweisen muss. Ein extra Layer, der wie in MongoDB Dokumente in Collections sammeln kann, exisiert in CouchDB nicht. Dokumente werden stattdessen direkt in der Datenbank abgelegt und über ihren Typen eingeordnet.
 Die Datenbank erlaubt es sich auch auf Maschinen zu replizieren, die nur unregelmäßig Verbindung mit dem Netzwerk haben. Die Synchronisation erfolgt automatisch, sobald das entsprechende Gerät online ist.
 
 
-###HTTP Rest Schnittstelle
+### 3.4.1 HTTP Rest Schnittstelle
 
 Für die Ausführung von Anfragen wird in CouchDB eine HTTP Schnittstelle zur Verfügung gestellt, die es erlaubt mittels folgender HTTP Methoden Datenbankinteraktionen auszulösen.
 
@@ -172,7 +168,7 @@ Zeigt die Rivisionsnummer des übergebenen Dokumentes.
 **Transfer-Encoding**
 Gibt die Kodierung des übergebenen Dokumentes zurück.
 
-###Views
+### 3.4.2 Views
 Die eigentlichen Abfragen werden als views bezeichnet, die über Javascript MapReduce Funktionen zusammengesetzt werden. Dabei wird zwischen zwei Arten von views Unterschieden.
 
 **Permanent views**
@@ -225,19 +221,19 @@ Die Ergebnismenge könnte wie folgt aussehen:
 ```
 Das Ergebnis enthält drei Dokumente, die als Key den Nachnamen (erstes Argument der emit() Funktion) und als value den Vor- und Nachnamen aller Jazz Spieler enthalten.
 
-### Eventual Consistency
+### 3.4.3 Eventual Consistency
 Wie in der Einleitung kurz erwähnt, verfolgt CouchDB eine etwas andere Strategie in Bezug auf die horizontale Skalierung. Anders als bei MongoDB liegt der Fokus nicht auf Konsistenz, sondern mehr auf Verfügbarkeit. Oberste Priorität in CouchDB ist nicht, dass jeder Nutzer die gleiche Sicht auf die Daten hat. Somit muss bei einer Abfrage nicht darauf gewartet werden, dass sich alle Knoten der DB über die Konsistenz der Daten einig sind und die Daten können direkt gelesen oder geschrieben werden. Die Datenbank kümmert sich anschließend um den Abgleich der erfolgten Operationen auf alle Knoten im System. Der Nachteil, der eventuell veralteten Sicht auf die Daten wird hier durch den hohen Geschwindigkeitsgewinn ausgeglichen. Je nach Anwendungsfall kann das einen durchaus gewollten trade off darstellen in Situationen in denen z.B. hohe cache performance benötigt wird.
 
 Die Umfang der Api, die zum Zugriff auf die Datenbank zur Verfügung gestellt wird, ist von deutlich geringerem Umfang, als in MongoDB.
 CouchDB verwendet MapReduce um die Ergebnisse einer View zu verarbeiten. Die Daten selbst werden in einem B-Tree abgelegt. Alle Dokumente und views können ausschließlich über den index key abgefragt werden. Das ermöglicht eine hohe performance und ermöglicht es außerdem die Daten einfach über mehrere Knoten zu verteilen.
 Abfragen, die Daten modifizieren, lösen keinen lock auf das entsprechende Dokument aus. Somit muss sich die Datenbank nicht um die Verwaltung der Nutzer und das Sperren der Dokumente kümmern. Trotzdem muss der gleichzeitige Zugriff auf die Daten sicher und verlässlich ermöglicht werden. CouchDB macht sich dafür Multi-Version Concurrency Control (MVCC) zu Nutze. MVCC erlaubt der DB die parallele Nutzung mit der höchstmöglichen Geschwindigkeit, indem die Dokumente nicht in einen locked Status versetzt werden. Stattdessen benutzt MVCC eine Art Versionierung, die es ermöglicht Daten solange von einem alten Versionsstand zu lesen, bis eine neue Version hinzugekommen ist. Wird ein Dokument modifiziert, legt die DB eine neue Version für dieses Dokument an, die zum Lesen freigegeben wird, sobald sie fertig geschrieben wurde. Bis dahin wird für alle Clients die vorherige Version zurückgeliefert. 
 
-### Replikation
+### 3.4.4 Replikation
 CouchDB nutzt eine inkrementelle Replikation der vorhanden Daten. Ob die zu replizierenden Server online sind oder nicht spielt hier eine untergeordnete Rolle, da jeder Knoten eigenständig arbeiten kann und die Synchronisation automatisch erfolgt, sobald dies zwischen bestehenden Knoten notwendig ist und auch wenn neue Knoten hinzugefügt werden. Ein bestehender Cluster könnte also einfach um einen weiteren Knoten, wie einem Laptop, erweitert werden der dann auch unterwegs offline mit seiner eigenen Version arbeitsfähig wäre. Sobald der Laptop sich wieder im Netzwerk befindet, findet die Synchronisation mit den restlichen Knoten statt. Eine Synchronisation kann dabei in beide Richtungen erfolgen.
 Dieses Verhalten birgt auch Risiken. Was passiert, wenn das gleiche Dokument auf zwei verschiedenen Knoten modifiziert wird? Welche Version ist die Korrekte? Wie andere Versionskontrollsysteme (z.B. Git) versucht CouchDB Konflikte automatisch zu erkennen und zu lösen. Beide Versionen werden dazu speziell mit einem Flag gekennzeichnet. 
 Eine der beiden Versionen wird von der DB als aktuelle Version bestimmt und in beiden Knoten gespeichert. Die andere Version wird jedoch nicht verworfen, sondern in der History der Versionskontrolle an vorletzter Stelle abgespeichert, sodass auch weiterhin auf sie zugegriffen werden kann. Dadurch bleibt die Konsistenz stets gewahrt. Tatsächlich liegt es an der zugreifenden Applikation zu bestimmen, welche der Versionen die Korrekte ist. Ein ändern der History ist daher möglich.
 
-## Vor- und Nachteile
+## 3.5 Vor- und Nachteile
 Einer der großen Stärken dokumentorientierter Datenbanken liegt, wie in den vorherigen Kapiteln genauer beleuchtet, in ihrer hohen Geschwindigkeit bei Lese- und Schreibzugriffen. Zusammen mit dem Grundgedanken eines losen Schemas kann eine Dokumentorienterte Datenbank recht schnell und einfach aufgesetzt und in Betrieb genommen werden, ohne sich verstrkt im Vorfeld um Struktur und Skalierbarkeit kümmern zu müssen. Dies ermöglicht eine hohen Grad an Flexibilität auch in Situtationen, die großere Veränderungen mit sich bringen, wie Änderungen an der Geschäftslogik der angebundenen Applikation. Da jedes gespeicherte Dokument ein eigenes Schema besitzen kann, ist eine Anpassung der Datenbank an den Quellcode eines Programms häufig nicht erforderlich. Die dokumentorientierte Datenbank kann somit mit einer Vielzahl von Applikationen genutzt werden, ohne direkte Anpassungen für diese vornehmen zu müssen. (vgl. Issa, Schiltz, 2015, S. 5). Dieses sind Merkmale, die dokumentorientierte Datenbank gerade im Bereich Big Data so interessant machen.
 Ein weiterer großer Vorteil ist die, im Gegensatz zu anderen Modellen, einfache Skalierbarkeit der dokumentorientierten Datenbanken. Traditionelle relationale Datenbanken werden häufig nur vertikal skaliert, da dies aus technischer Sicht, bis zu einem gewissen Punkt, die einfachste Möglichkeit darstellt sich den erforderlichen Geschwindigkeitsbedürfnissen anzupassen. Eine horizontale Skalierung ist bei relationellen Modellen häufig alles andere als trivial, da bereits im Vorfeld möglichst viel über die abzuspeichernden Daten und somit dem Datenbankschema bekannt sein muss. Die hier vorgestellten Datenbanken MongoDB und CouchDB wurden mit dem Aspekt der möglichst einfachen horizontalen Skalierung entwickelt und ermöglichen es auch nachträglich eine einfache und performante Skalierung mit vielen Knoten vorzunehmen. Ein großer Teil des Administrationsaufwands kann dabei sogar bei einigen Datenbanksystemen automatisiert auf das DBMS abgeschoben werden.
 
