@@ -222,8 +222,8 @@ In den ersten Versionen von objektorientierten Datenbanken und deren Systeme war
 Zwischen Klassen können unterschiedliche *Beziehungen* herrschen. Diese erhalten insbesondere bei einer grafischen Umsetzung der Struktur einer Datenbank eine große Bedeutung. Jede Art der Beziehung wird durch verschiedene Darstellungsarten gekennzeichnet. Diese sind weltweit gültig und somit überall auf die gleiche Art und Weise deutbar.
 Dabei gibt es unterschiedliche Kombinationsmöglichkeiten:
 
-	→	ausgehend von Oberklasse zu Unterklasse
-	→	ausgehend von Unterklasse zu Oberklasse (vgl. HEUER, 1997, S. 193)
+- ausgehend von Oberklasse zu Unterklasse
+- ausgehend von Unterklasse zu Oberklasse (vgl. HEUER, 1997, S. 193)
 
 Bei der Erstellung einer Klasse sollte unbedingt auf deren Namensgebung besonderes Augenmerk gelegt werden. Denn ist dieser nicht eindeutig mit dem Inhalt der Klasse identifizierbar, so kommt es zu eventuellen Missverständnissen und Kommunikationsproblemen. Deshalb sollte der Klassenname immer inhaltlich auf die Klasse hinweisen. 
 
