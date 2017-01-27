@@ -12,8 +12,11 @@ cs.cmu.edu/user/clamen/OODBMS/Manifesto/htManifesto/Manifesto.html. — Abgerufe
 Gilbert, Seth ; Lynch, Nancy Aa: Perspectives on the CAP Theorem. URL http://groups.csail.mit.
 edu/tds/papers/Gilbert/Brewer2.pdf. — Abgerufen am 14.01.2017
 
-Heuer, A.: Objektorientierte Datenbanken: Konzepte, Modelle, Standards und Systeme : Addison-Wesley,
-1997 – Maßstab — ISBN 9783893198009
+Heuer, Andreas: Objektorientierte Datenbanken - Konzepte, Modelle, Systeme : Addison-Wesley, 1992 - ISBN 3893193154
+
+Hohenstein, Uwe ; Lauffer, Regina ; Schmatz, Klaus-Dieter ; Weukert, Petra: Objektorientierte Datenbanksysteme - ODMG-Standard, Produkte, Systembewertung, Benchmark, Tuning : Springer, 1996 - ISBN 9783663057833 
+
+Hughes, John G.: Objektorientierte Datenbanken : Carl Hanser Verlag, 1992 - ISBN 3446165835
 
 Issa, Alain ; Schiltz, François: Document oriented Databases. URL http://cs.ulb.ac.be/public/
 _media/teaching/infoh415/student_projects/couchdb.pdf. — Abgerufen am 23.12.2016
@@ -25,8 +28,7 @@ Manifesto. Abgerufen am 30.12.2016
 Köln, FH: db4o-Objektdatenbank. URL wikis.gm.fh-koeln.de/wiki_db/Datenbanken/Db4o. — Abgerufen
 am 17.11.2016
 
-Meier, Andreas ; Wüst, Thomas: Objektorientierte und objektrelationale Datenbanken : dpunkt.verlag,
-2000 – Maßstab — ISBN 3932588681
+Meier, Andreas ; Wüst, Thomas: Objektorientierte und objektrelationale Datenbanken - Ein Kompass für die Praxis : dpunkt.verlag, 2003 - ISBN 3898641910
 
 Noth, Oliver: Unterschiede der Datenbankmodelle relationale, objektorientierte und dokumentenbasierte
 Datenbank. URL https://blog.secu-ring.de/software/unterschiede-der-datenbankmodelle-relationale-objektorientierte-und-doukumentenbasierte-— Abgerufen am 08.01.2017
@@ -42,13 +44,3 @@ THAKUR, DINESH: What is Object Oriented Database (OODB)? Advantages and Disadvan
 of OODBMSS. URL http://ecomputernotes.com/database-system/adv-database/
 object-oriented-database-oodb. — Abgerufen am 08.01.2017
    
---- 
-   
-Hohenstein, Uwe ; Lauffer, Regina ; Schmatz, Klaus-Dieter ; Weukert, Petra: Objektorientierte Datenbanksysteme - ODMG-Standard, Produkte, Systembewertung, Benchmark, Tuning : Springer, 1996 - ISBN 9783663057833 
-
-Hughes, John G.: Objektorientierte Datenbanken : Carl Hanser Verlag, 1992 - ISBN 3446165835
-
-Heuer, Andreas: Objektorientierte Datenbanken - Konzepte, Modelle, Systeme : Addison-Wesley, 1992 - ISBN 3893193154
-
-Meier, Andreas ; Wüst, Thomas: Objektorientierte und objektrelationale Datenbanken - Ein Kompass für die Praxis : dpunkt.verlag GmbH, 2003 - ISBN 3898641910
-
