@@ -23,7 +23,7 @@ Max Schaphaus
 
 - Objektorientiertes Datenbankmodell
   - 2.1 Konzept
-  - 2.2 Objekte, Datenbanken und Kapselung
+  - 2.2 Objekte, Datentypen und Kapselung
   - 2.5 Operationen
   - 2.7 Datenbankmodelle
   - 2.10.2 Nachteile   
