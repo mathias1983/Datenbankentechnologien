@@ -289,8 +289,7 @@ Der Standard besteht dabei aus folgenden Teilen:
 Durch die schwindende Popularität von objektorientierten Datenbanken in den letzten Jahren löste sich die ODMG auf und der Standard wird nun unter der OMG begleitet.   
 
 Die Sprache ODL (Object Definition Language) wurde eigens dazu entwickelt, um Objekttypen zu spezifizieren. Da sie als Spezifikationssprache neutral ist, kann sie in unterschiedlichen Programmiersprachen verwendet werden. Durch die Verwendung der ODL wird ein Schema definiert (vgl. Türker 2006, S. 73).   
-
-OML (Object Manipulation Language)   
+Die OML (Object Manipulation Language) führt Manipulationen in der Datenbank durch (vgl. Meier 2003, S. 77).   
 
 Als Abfragesprache wurde OQL (Object Query Language) festgelegt und damit eine einheitliche Struktur geschaffen, die vorher nicht vorhanden war und deshalb für Verwirrug bei den Programmierern sorgte, da sie unterschiedliche Sprachen verwenden konnten. Es handelt sich um eine deskriptive Abfragesprache, welche frei oder eingebettet verwendet werden kann. Das Ergebnis einer Abfrage in OQL ist entweder ein Objekt, ein Wert oder eine Sammlung von beidem (vgl. Meier 2003, S. 81).   
 Nachfolgend wird ein Beispiel einer OQL-Anfrage gezeigt:
