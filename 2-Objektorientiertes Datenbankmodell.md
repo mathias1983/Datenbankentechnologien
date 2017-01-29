@@ -286,7 +286,13 @@ Der Standard besteht dabei aus folgenden Teilen:
 - eine modelladäquate Abfragesprache
 - sprachkonsistente Implementierungsvorschriften für die Anbindung von C++, Smalltalk und Java (vgl. Meier 2003, S. 74f.) 
 
-Durch die schwindende Popularität von objektorientierten Datenbanken in den letzten Jahren löste sich die ODMG auf und der Standard wird nun unter der OMG begleitet.
+Durch die schwindende Popularität von objektorientierten Datenbanken in den letzten Jahren löste sich die ODMG auf und der Standard wird nun unter der OMG begleitet.   
+
+Die Sprache ODL (Object Definition Language) wurde eigens dazu entwickelt, um Objekttypen zu spezifizieren. Da sie als Spezifikationssprache neutral ist, kann sie in unterschiedlichen Programmiersprachen verwendet werden. Durch die Verwendung der ODL wird ein Schema definiert (vgl. Türker 2006, S. 73).   
+
+OML (Object Manipulation Language)   
+
+Als Abfragesprache wurde OQL (Object Query Language) festgelegt und damit eine einheitliche Struktur geschaffen, die vorher nicht vorhanden war und deshalb für Verwirrug bei den Programmierern sorgte, da sie unterschiedliche Sprachen verwenden konnten.
 
 
 ## 2.7 Datenbankmodelle
