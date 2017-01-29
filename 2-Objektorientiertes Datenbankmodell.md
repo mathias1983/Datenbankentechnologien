@@ -240,7 +240,7 @@ Es wird zwischen unterschiedlichen Arten der Vererbung unterschieden:
   In Objektorientierten Datenbanken können auch die Werte der Attribute einer Klasse mit vererbt werden. (vgl. Heuer 1992, S. 206)
 
 Dabei ist zu beachten, dass nicht jede Sprache die Möglichkeit der Mehrfachvererbung anbietet. Im Bereich der objektorientierten Datenbanken gehört dies jedoch zu den gängigen Umsetzungen (vgl. Heuer 1992, S. 209f.).   
-Durch die Deklaration einer Klasse als *privat* kann hingegen erreicht werden, dass deren Methoden nicht an andere Klassen vererbt werden können. Dies zeigt, dass es recht viele Möglichkeiten in der Vererbung gibt, die je nach Szenario verwendet werden können. Dies bietet eine hohe Flexibilität und schafft die Möglichkeit eines Aufbaus nach Wunsch (vgl. Heuer 1992, S. ).
+Durch die Deklaration einer Klasse als *privat* kann hingegen erreicht werden, dass deren Methoden nicht an andere Klassen vererbt werden können. Dies zeigt, dass es recht viele Möglichkeiten in der Vererbung gibt, die je nach Szenario verwendet werden können. Dies bietet eine hohe Flexibilität und schafft die Möglichkeit eines Aufbaus nach Wunsch (vgl. Heuer 1992, S. 386).
 
 Bei Klassen einer hierarchischen Beziehungsstruktur kommt der Begriff der *Generalisierung* zum Tragen. Diese besagt, dass Klassen in übergeordnete oder untergeordnete Subklassen verfeinert werden. Der Begriff der *Spezialisierung* hingegen befasst sich mit der inversen Sicht. Dabei werden eine Klasse oder mehrere Subklassen erzeugt, die die übergeordnete Klasse verfeinern. Das Prinzip der Generalisierung und Spezialisierung sind Beziehungen, die durch die Möglichkeit der Vererbung in objektorientierten Datenbanken realisiert werden (vgl. Meier 2003, S. 30).
 
