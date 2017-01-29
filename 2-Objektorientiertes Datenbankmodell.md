@@ -294,6 +294,14 @@ OML (Object Manipulation Language)
 
 Als Abfragesprache wurde OQL (Object Query Language) festgelegt und damit eine einheitliche Struktur geschaffen, die vorher nicht vorhanden war und deshalb für Verwirrug bei den Programmierern sorgte, da sie unterschiedliche Sprachen verwenden konnten.
 
+```
+Gebe alle Namen aus von Leuten die kein Tutor sind:
+
+SELECT p.name
+FROM p in People
+WHERE not (p.name in SELECT t.name FROM in TAs)
+```
+
 
 ## 2.7 Datenbankmodelle
 Im Bereich der OODBs gibt es eine Vielzahl von Datenbankmodellen. Einige dieser Datenbankmodelle werden im folgenden näher betrachtet unter der Prämisse der verwirklichten Konzepte. Ebenso liegt der Fokus auf dem Strukteil der OODBs und weniger auf dem Operationenteil samt Abfragesprachen.
