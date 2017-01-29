@@ -292,7 +292,8 @@ Die Sprache ODL (Object Definition Language) wurde eigens dazu entwickelt, um Ob
 
 OML (Object Manipulation Language)   
 
-Als Abfragesprache wurde OQL (Object Query Language) festgelegt und damit eine einheitliche Struktur geschaffen, die vorher nicht vorhanden war und deshalb für Verwirrug bei den Programmierern sorgte, da sie unterschiedliche Sprachen verwenden konnten.
+Als Abfragesprache wurde OQL (Object Query Language) festgelegt und damit eine einheitliche Struktur geschaffen, die vorher nicht vorhanden war und deshalb für Verwirrug bei den Programmierern sorgte, da sie unterschiedliche Sprachen verwenden konnten. Es handelt sich um eine deskriptive Abfragesprache, welche frei oder eingebettet verwendet werden kann. Das Ergebnis einer Abfrage in OQL ist entweder ein Objekt, ein Wert oder eine Sammlung von beidem (vgl. Meier 2003, S. 81).   
+Nachfolgend wird ein Beispiel einer OQL-Anfrage gezeigt:
 
 ```
 Gebe alle Namen aus von Leuten die kein Tutor sind:
