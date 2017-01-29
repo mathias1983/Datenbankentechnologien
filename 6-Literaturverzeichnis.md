@@ -43,4 +43,6 @@ de/Ausgaben/2007/09/Konservierungsmittel. — Abgerufen am 12.11.2016
 THAKUR, DINESH: What is Object Oriented Database (OODB)? Advantages and Disadvantages
 of OODBMSS. URL http://ecomputernotes.com/database-system/adv-database/
 object-oriented-database-oodb. — Abgerufen am 08.01.2017
+
+Türker, Can ; Saake, Gunter: Objektrelationale Datenbanken : dpunkt.verlag, 2006 - ISBN 3898641902
    
