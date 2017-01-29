@@ -35,7 +35,7 @@ Svenja Haberditzl
 - Objektorientiertes Datenbankmodell
   - 2.3 Klassen
   - 2.4 Vererbung
-  - 2.7 Der ODMG-Standard
+  - 2.6 Der ODMG-Standard
   - 2.8 Datenbank- und Abfragesprache
   - 2.9 Datenbanksysteme
   - 2.10.1 Vorteile   
