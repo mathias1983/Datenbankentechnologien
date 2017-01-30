@@ -10,8 +10,7 @@ Datenbanken in einem relationalen Datenbankmodell bestehen im wesentlichen aus 4
 
 Klassische relationale Datenbankmodelle folgen üblicherweise einem fest vorgegebenen Schema, dass beschreibt, wie die Daten gepeichert werden und in welcher Beziehung sie zueinander stehen.
 
-NoSQL-Datenbanken liefern einen völlig neuen Ansatz zur Speicherung von Daten und
-besitzen üblicherweise kein festes Schema, sind nicht relational und legen weniger Wert auf Konsistenz, als relationale Datenbanken. Die Abkürzung NoSQL ist nicht präzise spezifiziert, wird aber häufig als "Not only SQL" oder auch "non SQL" bezeichnet, was einerseits suggeriert, dass auch in NoSQL-Datenbanken SQL ähnliche Abfragesprachen anzutreffen sind, andererseits soll so die Abgrenzung zu relationalen Modellen verdeutlicht werden.
+NoSQL-Datenbanken liefern einen völlig neuen Ansatz zur Speicherung von Daten und besitzen üblicherweise kein festes Schema, sind nicht relational und legen weniger Wert auf Konsistenz, als relationale Datenbanken. Die Abkürzung NoSQL ist nicht präzise spezifiziert, wird aber häufig als "Not only SQL" oder auch "non SQL" bezeichnet, was einerseits suggeriert, dass auch in NoSQL-Datenbanken SQL ähnliche Abfragesprachen anzutreffen sind, andererseits soll so die Abgrenzung zu relationalen Modellen verdeutlicht werden.
 Gegenüber relationalen Datenbanken liegen die großen Stärken von NoSQL in der hohen Geschwindigkeit bei der Indexierung von großen Datenmengen, der großen Anzahl von Lese- und Schreiboperationen, die einfachere Skalierbarkeit (besonders horizontal) sowie der besseren Verfügbarkeit, was sie u.a. gerade für den Big Data Bereich oder der Echtzeitanalyse sehr interessant macht. Der daraus resultierende Geschwindigkeitzuwachs geht allerdings nicht selten zu Lasten der Konsistenz, weshalb für ein anstehendes Projekt im Vorfeld genau geplant und abgewogen werden sollte, welcher Art von Aufgaben die Datenbank zu erledigen hat und welche Merkmale sie aufweisen muss, gerade im Hinblick auf das CAP Theorem (vgl. Gilbert, Lynch S.3), welches immer nur eine garantierte Ausrichtung in zwei von drei Merkmalen wie Konsistenz, Verfügbarkeit und Partitionstoleranz erlaubt. 
 
 Im Kontrast zum relationalen Datenbankmodell kennt das dokumentorientierte Dantenbankmodell kein Konzept eines festen Schemas. Genauso wenig findet man Tabellen, Beziehungen, Zeilen oder Spalten im klassichen Sinn. Oberflächlich betrachtet mag das zunächst wie ein Verlust an Organisation und Intergrität erscheinen. Dokumentorientierte Datenbanken im engl. auch document stores genannt, bieten jedoch vereinzelt ebenfalls ACID Eigenschaften, die den Einsatz einer entsprechenden Datenbank im professionellen Einsatz rechtfertigen. Um die Art und Weise wie Daten in einem dokumentorienten Datenbankmodell gespeichert und organisiert werden besser zu verstehen, werden die folgenden Punkte genauer auf dieses Model eingehen. 
@@ -83,10 +82,10 @@ Wird verwendet für hash based sharding. Indiziert den hash des Wertes eines Fel
 
 MongoDB stellt also mehrere Typen von Indizes zur Verfügung. Zu beachten ist jedoch, dass pro Abfrage jeweils nur ein Index genutzt werden kann. Allerdings ist es nicht dem Nutzer überlassen, welcher der gesetzten Indizes tatsächlich genutzt wird, da das DBMS bei einer Abfrage automatisch versucht den optimalen Index zu wählen. 
 
-In MongoDB existiert ein besonderes Feld, welches jedes Dokument in der Datenbank eindeutig identifiziert und als Index implementiert ist. Selbst wenn der Nutzer es nicht explizit in das Schema seines Dokumentes einfügt, sorgt MongoDB dafür, dass es automatisch hinzugefügt wird. Aus diesem Grund ist es nicht möglich, dass Feld aus dem Schema des Dokuments zu entfernen. Es kann lediglich aus der Ergebnismenge einer Abfrage herausgehalten werden. Dieses Feld beginnt mit einem Unterstrich geflogt von den Buchstaben id ("_id") und beinhaltet als Wert eine ObjectID.
+In MongoDB existiert ein besonderes Feld, welches jedes Dokument in der Datenbank eindeutig identifiziert und als Index implementiert ist. Selbst wenn der Nutzer es nicht explizit in das Schema seines Dokumentes einfügt, sorgt MongoDB dafür, dass es automatisch hinzugefügt wird. Aus diesem Grund ist es nicht möglich, dass Feld aus dem Schema des Dokuments zu entfernen. Es kann lediglich aus der Ergebnismenge einer Abfrage herausgehalten werden. Dieses Feld beginnt mit einem Unterstrich gefolgt von den Buchstaben id ("_id") und beinhaltet als Wert eine ObjectID.
 Die ObjectID ist ein 12 Byte großer Wert welcher sich aus einem Unix Zeitstempel (4 Byte), einer machine ID (3 Byte), einer process ID (2 Byte) und einem Zähler (3 Byte) zusammensetzt. Da die ObjectId als Index in jedem Dokument einer Collection vorkommt und der Zeitstempel als erstes aufgeführt ist, lassen sich die Dokumente dadurch in aufsteigender oder absteigender Reihenfolge sortieren.
 
-Für die Speicherung der Indexdaten verwendet MongoDB intern, so wie viele andere document stores auch, einen B-Tree, der zugriffe in logarithmischer Zugriffszeit O(logn) möglich macht und damit eine hohe Ausführungsgeschwindikeit bietet. 
+Für die Speicherung der Indexdaten verwendet MongoDB intern, so wie viele andere document stores auch, einen B-Tree, der Zugriffe in logarithmischer Zugriffszeit O(logn) möglich macht und damit eine hohe Ausführungsgeschwindikeit bietet. 
 
 ### 3.3.2 Indexeigenschaften
 
@@ -94,7 +93,7 @@ Für die Speicherung der Indexdaten verwendet MongoDB intern, so wie viele ander
 Wie auch in relationellen Datenbanken sorgt diese Eigenschaft dafür, dass keine mehrfachen Werte für ein Feld mit einem Index gespeichert werden können.
 
 **Partial Indexes**
-Erlauben es den Index nur auf bestimmte Bereiche mittels eines filters anzuwenden, was Speicherplatz spart und die Geschwindigkeit erhöht.
+Erlauben es den Index nur auf bestimmte Bereiche mittels eines Filters anzuwenden, was Speicherplatz spart und die Geschwindigkeit erhöht.
 
 **Sparse Indexes**
 Sparse Indexes funktionieren wie normale Indizes, außer dass sie Referenzen zu Dokumenten nicht berücksichtigen, die nicht das indizierte Feld beeinhalten. Die Suche über diesen Index, die nur in einigen Dokumenten gesetzt ist, kann so bei einer großen Menge an Daten einen hohen Geschwindigkeitsvorteil bringen.
@@ -103,7 +102,7 @@ Sparse Indexes funktionieren wie normale Indizes, außer dass sie Referenzen zu 
 Können genutzt werden um Dokumente automatisch nach Ablauf eines bestimmten Zeitraums zu löschen. Praktische Anwendungsfälle sind z. B. Log-Dateien.
 
 ### 3.3.3 Weitere Features
-Neben den verschieden Indextypen und ihren Eigenschaften bietet die Datenbank weitere sinvolle Funktionen wie 
+Neben den verschiedenen Indextypen und ihren Eigenschaften bietet die Datenbank weitere sinvolle Funktionen wie 
 
 **MapReduce**
 mapReduce erlaubt es große Datenmengen mit eigenen Funktionen parallel und mit großer Effiziens zu verarbeiten.
@@ -174,7 +173,7 @@ Die eigentlichen Abfragen werden als views bezeichnet, die über Javascript MapR
 Diese werden permanent in einem speziellen Dokument der Datenbank gespeichert. Dieses Dokument wird das design Dokument genannt und kann per HTTP Get abgefragt werden.
 
 **Temporary views**
-Diese werden nur dynamisch ausgeführt und nicht gespeichert. Mit Hilfe eines HTTP Post Request und der Funktion als Body kann die Abfrage durchgeführt werden. Zu beachten ist, dass temporary views nur für den Einsatz während der Entwicklung gedacht sind, da sie deutlich mehr performance kosten, als permanent views.
+Diese werden nur dynamisch ausgeführt und nicht gespeichert. Mit Hilfe eines HTTP Post Request und der Funktion als Body kann die Abfrage durchgeführt werden. Zu beachten ist, dass temporary views nur für den Einsatz während der Entwicklung gedacht sind, da sie deutlich mehr Performance kosten, als permanent views.
 
 Eine einfache View, die alle Dokumente vom Typ "jazz player" liefert, könnte beispielsweise so aussehen:
 
@@ -224,7 +223,7 @@ Das Ergebnis enthält drei Dokumente, die als Key den Nachnamen (erstes Argument
 Wie in der Einleitung kurz erwähnt, verfolgt CouchDB eine etwas andere Strategie in Bezug auf die horizontale Skalierung. Anders als bei MongoDB liegt der Fokus nicht auf Konsistenz, sondern mehr auf Verfügbarkeit. Oberste Priorität in CouchDB ist nicht, dass jeder Nutzer die gleiche Sicht auf die Daten hat. Somit muss bei einer Abfrage nicht darauf gewartet werden, dass sich alle Knoten der DB über die Konsistenz der Daten einig sind und die Daten können direkt gelesen oder geschrieben werden. Die Datenbank kümmert sich anschließend um den Abgleich der erfolgten Operationen auf alle Knoten im System. Der Nachteil der eventuell veralteten Sicht auf die Daten wird hier durch den hohen Geschwindigkeitsgewinn ausgeglichen. Je nach Anwendungsfall kann das einen durchaus gewollten trade off darstellen, in Situationen, in denen beispielsweise eine hohe cache performance benötigt wird.
 
 Die Umfang der Api, die zum Zugriff auf die Datenbank zur Verfügung gestellt wird, ist von deutlich geringerem Umfang, als in MongoDB.
-CouchDB verwendet MapReduce um die Ergebnisse einer View zu verarbeiten. Die Daten selbst werden in einem B-Tree abgelegt. Alle Dokumente und views können ausschließlich über den index key abgefragt werden. Das ermöglicht nicht nur eine hohe performance, sondern erlaubt es auch die Daten über mehrere Knoten zu verteilen.
+CouchDB verwendet MapReduce um die Ergebnisse einer View zu verarbeiten. Die Daten selbst werden in einem B-Tree abgelegt. Alle Dokumente und views können ausschließlich über den index key abgefragt werden. Das ermöglicht nicht nur eine hohe Performance, sondern erlaubt es auch die Daten über mehrere Knoten zu verteilen.
 Abfragen die Daten modifizieren, lösen keinen lock auf das entsprechende Dokument aus. Somit muss sich die Datenbank nicht um die Verwaltung der Nutzer und das Sperren der Dokumente kümmern. Trotzdem muss der gleichzeitige Zugriff auf die Daten sicher und verlässlich ermöglicht werden. CouchDB macht sich dafür Multi-Version Concurrency Control (MVCC) zu Nutze. MVCC erlaubt der DB die parallele Nutzung mit der höchstmöglichen Geschwindigkeit, indem die Dokumente nicht in einen locked Status versetzt werden. Stattdessen benutzt MVCC eine Art Versionierung, die es ermöglicht Daten solange von einem alten Versionsstand zu lesen, bis eine neue Version hinzugekommen ist. Wird ein Dokument modifiziert, legt die DB eine neue Version für dieses Dokument an, die zum Lesen freigegeben wird, sobald sie fertig geschrieben wurde. Bis dahin wird für alle Clients die vorherige Version zurückgeliefert. 
 
 ### 3.4.4 Replikation
