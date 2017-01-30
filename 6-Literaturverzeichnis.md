@@ -19,7 +19,7 @@ Issa, Alain ; Schiltz, François: Document oriented Databases. URL http://cs.ulb
 k.A.: The Object-Oriented Database System Manifesto. URL https://www.fbi.h-da.de/fileadmin/personal/h.erbs/Databases/ObjectOrientedDBMSs/Manifesto/index.Html. — Zusammenfassung des Original-
 Manifesto. Abgerufen am 30.12.2016
 
-Köln, FH: db4o-Objektdatenbank. URL wikis.gm.fh-koeln.de/wiki_db/Datenbanken/Db4o. — Abgerufen
+Köln, FH: db4o-Objektdatenbank. URL wikis.gm.fh-koeln.de/wiki_db/Datenbanken/Db4o — Abgerufen
 am 17.11.2016
 
 Meier, Andreas ; Wüst, Thomas: Objektorientierte und objektrelationale Datenbanken - Ein Kompass für die Praxis : dpunkt.verlag, 2003 - ISBN 3898641910
