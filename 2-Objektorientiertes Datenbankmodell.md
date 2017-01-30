@@ -18,7 +18,7 @@ Unterteilung in drei Gruppen vorgenommen wird. Die Anforderungen sind dabei nich
 
 Als die drei Kategorien sind festgelegt: "unbedingt notwendige Bestandteile" (13), "optionale Bestandteile" (5) sowie "offene Bestandteile" (3). Die "optionalen Bestandteile" dienen dazu, ein objektorientiertes Datenbanksystem weiter zu verbessern, müssen jedoch nicht genutzt werden (vgl. Heuer 1992, S. 275).
 
-Bevor im Folgenden noch näher auf die Einzelanforderungen eingegangen wird, kann auf oberster Ebene eines objektorientierten Datenbankmodells die Unterteilung zwischen dem Strukturteil und dem Operationsteil getroffen.
+Bevor im Folgenden noch näher auf die Einzelanforderungen eingegangen wird, kann auf oberster Ebene eines objektorientierten Datenbankmodells die Unterteilung zwischen dem Strukturteil und dem Operationsteil getroffen werden.
 Der Strukturteil spiegelt die Gemeinsamkeiten semantischer Datenbankmodelle und objektorientierter Prinzipien wider. Diese Prinzipien umfassen die statische Struktur, der definierten Objekte.
 Folgende Bereiche sind dabei dem Strukturteil zuzuordnen (vgl. Heuer 1992, S. 274):
 
@@ -56,7 +56,7 @@ Nachfolgend werden nun die zu Anfang beschriebenen Anforderungen aus dem "Manife
 
 **Persistenz**  Gespeicherte Daten oder eben auch Objekte müssen dauerhaft gespeichert werden können. Der Speichervorgang muss dabei inbegriffen sein, sodass hierfür nicht explizit Operationen ausgeführt werden müssen.
 
-**Sekundärspeicher-Verwaltung** Das OODBMS muss Werkzeuge bereitstellen, um Daten effizient zu verwalten. Hierzu zählen u.a. Index-Management, Daten-Clustiering, Daten-Pufferung und Abfragenoptimierung.
+**Sekundärspeicher-Verwaltung** Das OODBMS muss Werkzeuge bereitstellen, um Daten effizient zu verwalten. Hierzu zählen u.a. Index-Management, Daten-Clustering, Daten-Pufferung und Abfragenoptimierung.
 
 **Nebenläufigkeit von Transaktionen** Wie in jedem Datenbankmanagementsystem muss es auch in OODBMS möglich sein, dass mehrere User gleichzeitig auf dieses zugreifen.
 
@@ -231,7 +231,7 @@ Auch der Faktor der Erweiterbarkeit eines Projekts ist durch die Möglichkeit de
 ## 2.5 Operationen
 Nachdem, wie in vorausgehenden Kapiteln beschrieben, komplexe Typen beim Umgang mit objektorientierten Datenbanken, fixer Bestandteil dieser sind, ist es ebenso erforderlich entsprechende Operationen nutzen zu können, um mit diesen komplexen Typen arbeiten zu können. Passend zu den bereits bekannten drei Typkonstruktoren, existieren für diese entsprechende  Standardoperatoren (vgl. Heuer 1992, S. 285).
 
-**Tupelkonstruktor** Für den Tupelkonstruktor existieren die Operatoren "Komponentenzugriff" sowie "Test auf Gleichheit/Ungleichheit". Beim Komponentenzugriff kann in einer Art Kurzform auf Elemente zugegriffen werden, bspw. in Beispiel 1 aus dem Abschnitt Datentypen per Adresse.Ort auf den Ort. Über den Operator  "Test auf Gleichheit/Ungleichheit" bietet die Möglichkeit zwei komplexe Tupel mit Komponenten  zu vergleichen. Erforderlich dazu ist, dass diese im Kontext Anzahl und Typ zumindest verträglich sind.
+**Tupelkonstruktor** Für den Tupelkonstruktor existieren die Operatoren "Komponentenzugriff" sowie "Test auf Gleichheit/Ungleichheit". Beim Komponentenzugriff kann in einer Art Kurzform auf Elemente zugegriffen werden, bspw. in Beispiel 1 aus dem Abschnitt Datentypen per Adresse.Ort auf den Ort. Der Operator "Test auf Gleichheit/Ungleichheit" bietet die Möglichkeit zwei komplexe Tupel mit Komponenten  zu vergleichen. Erforderlich dazu ist, dass diese im Kontext Anzahl und Typ zumindest verträglich sind.
 
 **Mengenkonstruktor** Für den Mengenkonstruktor existieren diverse Operationen. Diese sind "Zugriff auf ein Element durch Iteratoren", "Test auf ein Element", "Vergleich von Mengen" sowie weitere Mengenoperationen (Vereinigung, Differenz, Durchschnitt). Durch die Iteratoren können alle Elemente der Menge durchlaufen werden. Der "Test auf Elemente" beinhaltet hingegen Vergleichsoperatoren für Mengen wie gleich, echte Teilmenge von, unechte Teilmenge von, ungleich, echte und unechte Obermenge von. Die zuvor genannten üblichen Mengenoperationen Vereinigung/Durchschnitt/Differenz können nur verwendet werden, wenn die Elementtypen, mit denen die Operationen ausgeführt werden sollen, hierfür geeignet sind.
 
