@@ -7,5 +7,5 @@ Im Laufe dieser Evolution wurden ab Ende der Achtziger Jahre auch objektorientie
 
 Später entwickelte Dokumentdatenbanken verfolgen ein ähnliches Konzept und speichern zusammenhängende Informationen ebenfalls gemeinsam in einem Dokument. Es zeigt sich aber, obwohl beide Datenbanktypen zur Gruppe der NoSQL-Datenbanken gehören, dass beachtliche Unterschiede zwischen den Datenbanksystemen bestehen. Dies beginnt bereits bei der fixen Datenstruktur eines Objekts und den beliebig erweiterbaren Dokumenten in Dokumentendatenbanken.
 
-Die nachfolgende Arbeit stellt Objektorientierte Datenbanken, deren Krenprinzipien, Vor- und Nachteile sowie einen Vergleich zu Dokumentdatenbanken vor. Dabei wird auf die jeweiligen Eigenschaften und Anwendungsszenarien eingegangen, sowie Gründe ermittelt, wieso Objektorientierte Datenbanken eine so geringe Verbreitung aufweisen und sich am Markt nicht durchsetzen konnten.
+Die nachfolgende Arbeit stellt Objektorientierte Datenbanken, deren Krenprinzipien, Vor- und Nachteile sowie einen Vergleich zu Dokumentendatenbanken vor. Dabei wird auf die jeweiligen Eigenschaften und Anwendungsszenarien eingegangen, sowie Gründe ermittelt, wieso Objektorientierte Datenbanken eine so geringe Verbreitung aufweisen und sich am Markt nicht durchsetzen konnten.
 
